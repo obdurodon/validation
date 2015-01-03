@@ -32,7 +32,7 @@ def run_command(command):
     # set the use show window flag, might make conditional on being in Windows
     startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
     
-    p = subprocess.Popen(command, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, stdin=subprocess.PIPE, startupinfo=startupinfo)
+    p = subprocess.check_output(command, shell=False)
     
     for line in iter(p.stdout.readline, b''):
         output = output + line
@@ -80,7 +80,7 @@ paths = get_filepaths(directory)
 
 # loop over files
 for path in paths:
-    if path.endswith('.html') || path.endswith('.xhtml'):
+    if (path.endswith('.html') or path.endswith('.xhtml')):
         # append path name
         html_output = html_output + '\n' + path
         # run html validator and append output
