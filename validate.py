@@ -3,7 +3,7 @@
 
 import os
 import sys
-import subprocess
+import subprocess32
 
 vnu_path = 'vnu/vnu.jar'
 
@@ -25,14 +25,14 @@ def get_filepaths(dir):
 
 # method uses techniques from link below to run command line processes
 # http://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output
-def run_command(command):
+def run_command(command, new_shell):
     output = ''
     # instantiate a startupinfo obj so command terminals aren't opened for each process
-    startupinfo = subprocess.STARTUPINFO()
+    #startupinfo = subprocess32.STARTUPINFO()
     # set the use show window flag, might make conditional on being in Windows
-    startupinfo.dwFlags |= subprocess.STARTF_USESHOWWINDOW
+    #startupinfo.dwFlags |= subprocess32.STARTF_USESHOWWINDOW
     
-    p = subprocess.check_output(command, shell=False)
+    p = subprocess32.check_output(command.split(), shell=new_shell)
     
     for line in iter(p.stdout.readline, b''):
         output = output + line
@@ -42,15 +42,15 @@ def run_command(command):
 # validate html files
 def validate_html(file):
     command = 'java -cp ' + vnu_path + ' nu.validator.client.HttpClient ' + file
-    output = run_command(command)
+    output = run_command(command, False)
     return output
 
-# validate html files
+# validate css files
 def validate_css(file):
     output = ''
     return output
 
-# validate html files
+# validate links for html pages
 def check_links(file):
     output = ''
     return output
@@ -67,7 +67,7 @@ css_output = 'CSS VALIDATION\n'
 # set up html validator
 port = '8888'
 command = 'java -cp ' + vnu_path + ' nu.validator.servlet.Main ' + port
-run_command(command)
+run_command(command, True)
 
 # check if path was specified
 if (len(sys.argv) > 1):
