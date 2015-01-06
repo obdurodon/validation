@@ -4,8 +4,9 @@
 import os
 import sys
 import subprocess32
+from multiprocessing import Process
 
-vnu_path = 'vnu/vnu.jar'
+vnu_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'vnu/vnu.jar'))
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -31,14 +32,14 @@ def run_command(command, new_shell):
     #startupinfo = subprocess32.STARTUPINFO()
     # set the use show window flag, might make conditional on being in Windows
     #startupinfo.dwFlags |= subprocess32.STARTF_USESHOWWINDOW
-    
-    p = subprocess32.check_output(command.split(), shell=new_shell)
+    #print command.split()
+    p = subprocess32.check_output(command, shell=new_shell)
     
     for line in iter(p.stdout.readline, b''):
         output = output + line
     
     return output
-
+    
 # validate html files
 def validate_html(file):
     command = 'java -cp ' + vnu_path + ' nu.validator.client.HttpClient ' + file
@@ -55,19 +56,24 @@ def check_links(file):
     output = ''
     return output
 
-
+# set up for html validation
+def html_setup():
+    port = '8888'
+    command = 'java -cp ' + vnu_path + ' nu.validator.servlet.Main ' + port
+    run_command(command, False)
+    
 # ****************************** MAIN LOGIC ******************************    
 
+#run_command(['echo', 'Hello, world!'], False)
 # global variables
 directory = ''
 paths = []
 html_output = 'HTML VALIDATION\n'
 css_output = 'CSS VALIDATION\n'
 
-# set up html validator
-port = '8888'
-command = 'java -cp ' + vnu_path + ' nu.validator.servlet.Main ' + port
-run_command(command, True)
+# html validation set up
+new_process = Process(target=html_setup)
+new_process.start()
 
 # check if path was specified
 if (len(sys.argv) > 1):
@@ -80,6 +86,7 @@ paths = get_filepaths(directory)
 
 # loop over files
 for path in paths:
+    print path
     if (path.endswith('.html') or path.endswith('.xhtml')):
         # append path name
         html_output = html_output + '\n' + path
