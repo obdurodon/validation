@@ -5,8 +5,10 @@ import os
 import sys
 import subprocess32
 from multiprocessing import Process
+import time
 
-vnu_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'vnu/vnu.jar'))
+vnu_path = 'vnu/vnu.jar'
+#vnu_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'vnu/vnu.jar'))
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -26,24 +28,26 @@ def get_filepaths(dir):
 
 # method uses techniques from link below to run command line processes
 # http://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output
-def run_command(command, new_shell):
+def run_command(command):
     output = ''
     # instantiate a startupinfo obj so command terminals aren't opened for each process
     #startupinfo = subprocess32.STARTUPINFO()
     # set the use show window flag, might make conditional on being in Windows
     #startupinfo.dwFlags |= subprocess32.STARTF_USESHOWWINDOW
     #print command.split()
-    p = subprocess32.check_output(command, shell=new_shell)
-    
+    p = subprocess32.check_output(command, stderr=subprocess32.STDOUT, shell=True)
+    print p
+    '''
     for line in iter(p.stdout.readline, b''):
         output = output + line
     
     return output
+    '''
     
 # validate html files
 def validate_html(file):
     command = 'java -cp ' + vnu_path + ' nu.validator.client.HttpClient ' + file
-    output = run_command(command, False)
+    output = run_command(command)
     return output
 
 # validate css files
@@ -59,12 +63,12 @@ def check_links(file):
 # set up for html validation
 def html_setup():
     port = '8888'
-    command = 'java -cp ' + vnu_path + ' nu.validator.servlet.Main ' + port
-    run_command(command, False)
+    command = 'java -cp vnu/vnu.jar nu.validator.servlet.Main ' + port + ' </dev/null &>/dev/null &'
+    subprocess32.call(command, shell=True)
     
 # ****************************** MAIN LOGIC ******************************    
 
-#run_command(['echo', 'Hello, world!'], False)
+#run_command(['echo', 'Hello, world!'])
 # global variables
 directory = ''
 paths = []
@@ -74,6 +78,8 @@ css_output = 'CSS VALIDATION\n'
 # html validation set up
 new_process = Process(target=html_setup)
 new_process.start()
+time.sleep(12)
+print '\n\n\n maybe started? \n\n\n'
 
 # check if path was specified
 if (len(sys.argv) > 1):
