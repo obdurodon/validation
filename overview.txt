@@ -5,6 +5,10 @@
 - CSS validation
 - check links
 
+HELPFUL COMMANDS
+
+sudo netstat -nlp | grep 8888
+
 ------------------------------------------------------
 
 DETAILS
