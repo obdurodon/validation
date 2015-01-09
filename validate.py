@@ -52,6 +52,9 @@ def validate_html(file):
 
 # validate css files
 def validate_css(file):
+    # encode URL
+    # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
+    # process SOAP response
     output = ''
     return output
 
@@ -98,13 +101,11 @@ for path in paths:
         html_output = html_output + '\n' + path
         # run html validator and append output
         html_output = html_output + '\n' + validate_html(path)
+        # run css validator and append output
+        html_output = html_output + '\n' + validate_css(path)
         # check links and append output
         html_output = html_output + '\n' + check_links(path)
-    if path.endswith('.css'):
-        # append path name
-        css_output = css_output + '\n' + path
-        # run css validator and append output
-        css_output = css_output + '\n' + validate_css(path)
+        
         
 # print output
 print html_output
