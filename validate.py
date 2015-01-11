@@ -7,12 +7,14 @@ import subprocess32
 from multiprocessing import Process
 import time
 
-vnu_path = 'vnu/vnu.jar'
-#vnu_path = os.path.abspath(os.path.join(os.path.dirname(__file__), 'vnu/vnu.jar'))
+# get base URL for project site
+dir_path = os.getcwd().split('/')
+dir_name = dir_path[-1]
+url_base = 'http://' + dir_name + '.obdurodon.org/'
 
 # ****************************** AUXILLARY METHODS ***********************
 
-# method taken from answer to StackOverflow question at link below
+# method taken from answer to StackOverflow question at link below, MAY WANT TO MODIFY TO ONLY DO HTML AND INCLUDES
 # http://stackoverflow.com/questions/3207219/how-to-list-all-files-of-a-directory-in-python
 def get_filepaths(dir):
     file_paths = []  # List which will store all of the full file paths
