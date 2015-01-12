@@ -80,12 +80,13 @@ paths = get_filepaths(directory)
 # loop over files
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
-        # append path name
-        html_output = html_output + '\n' + path
-        # run html validator and append output
-        html_output = html_output + '\n' + validate_html(path)
+        if 'include' not in path:
+            # append path name
+            html_output = html_output + '\n' + path
+            # run html validator and append output
+            html_output = html_output + '\n' + validate_html(path)
         # run css validator and append output
-        html_output = html_output + '\n' + validate_css(path)
+        css_output = html_output + '\n' + validate_css(path)
         # check links and append output
         html_output = html_output + '\n' + check_links(path)
         
