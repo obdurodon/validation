@@ -47,8 +47,9 @@ def run_command(command):
     '''
     
 # validate html files
+# https://www.npmjs.com/package/html-validator
 def validate_html(file):
-    command = 'java -cp ' + vnu_path + ' nu.validator.client.HttpClient ' + file
+    command = "html-validator " + url + " --validator='http://html5.validator.nu"
     output = run_command(command)
     return output
 
