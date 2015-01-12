@@ -97,7 +97,6 @@ for path in paths:
             validate_html(path)
             print '\nCHECKING LINKS: \n'
             check_links(path)
-            print '\n'
         # run css validator and append output
         #css_output = html_output + '\n' + validate_css(path)
         
