@@ -7,12 +7,17 @@ import subprocess32
 from multiprocessing import Process
 import time
 
-# get base URL for project site
-dir_path = os.getcwd().split('/')
-dir_name = dir_path[-1]
-url_base = 'http://' + dir_name + '.obdurodon.org/'
 
 # ****************************** AUXILLARY METHODS ***********************
+
+# get base URL for project site
+def get_url(path):
+    dir_path = os.getcwd().split('/')
+    dir_name = dir_path[-1]
+    file_path = path.split('/')
+    filename = file_path[-1]
+    url = 'http://' + dir_name + '.obdurodon.org/' + filename
+    return url
 
 # method taken from answer to StackOverflow question at link below, MAY WANT TO MODIFY TO ONLY DO HTML AND INCLUDES
 # http://stackoverflow.com/questions/3207219/how-to-list-all-files-of-a-directory-in-python
@@ -32,23 +37,13 @@ def get_filepaths(dir):
 # http://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output
 def run_command(command):
     output = ''
-    # instantiate a startupinfo obj so command terminals aren't opened for each process
-    #startupinfo = subprocess32.STARTUPINFO()
-    # set the use show window flag, might make conditional on being in Windows
-    #startupinfo.dwFlags |= subprocess32.STARTF_USESHOWWINDOW
-    #print command.split()
-    p = subprocess32.check_output(command, stderr=subprocess32.STDOUT, shell=True)
-    print p
-    '''
-    for line in iter(p.stdout.readline, b''):
-        output = output + line
-    
+    output = subprocess32.check_output(command, stderr=subprocess32.STDOUT, shell=True)
     return output
-    '''
     
 # validate html files
 # https://www.npmjs.com/package/html-validator
 def validate_html(file):
+    url = get_url(file)
     command = "html-validator " + url + " --validator='http://html5.validator.nu'"
     output = run_command(command)
     return output
@@ -65,12 +60,6 @@ def validate_css(file):
 def check_links(file):
     output = ''
     return output
-
-# set up for html validation
-def html_setup():
-    port = '8888'
-    command = 'java -cp vnu/vnu.jar nu.validator.servlet.Main ' + port + ' </dev/null &>/dev/null &'
-    subprocess32.call(command, shell=True)
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -80,12 +69,6 @@ directory = ''
 paths = []
 html_output = 'HTML VALIDATION\n'
 css_output = 'CSS VALIDATION\n'
-
-# html validation set up
-new_process = Process(target=html_setup)
-new_process.start()
-time.sleep(12)
-print '\n\n\n maybe started? \n\n\n'
 
 # check if path was specified
 if (len(sys.argv) > 1):
@@ -98,7 +81,6 @@ paths = get_filepaths(directory)
 
 # loop over files
 for path in paths:
-    print path
     if (path.endswith('.html') or path.endswith('.xhtml')):
         # append path name
         html_output = html_output + '\n' + path
