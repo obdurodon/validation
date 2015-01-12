@@ -7,12 +7,17 @@ import subprocess32
 from multiprocessing import Process
 import time
 
+# global variables
+directory = ''
+paths = []
+html_output = 'HTML VALIDATION\n'
+css_output = 'CSS VALIDATION\n'
 
 # ****************************** AUXILLARY METHODS ***********************
 
 # get base URL for project site
 def get_url(path):
-    dir_path = os.getcwd().split('/')
+    dir_path = directory.split('/')
     dir_name = dir_path[-1]
     file_path = path.split('/')
     filename = file_path[-1]
@@ -62,13 +67,6 @@ def check_links(file):
     return output
     
 # ****************************** MAIN LOGIC ******************************    
-
-#run_command(['echo', 'Hello, world!'])
-# global variables
-directory = ''
-paths = []
-html_output = 'HTML VALIDATION\n'
-css_output = 'CSS VALIDATION\n'
 
 # check if path was specified
 if (len(sys.argv) > 1):
