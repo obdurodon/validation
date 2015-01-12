@@ -1,9 +1,15 @@
 ﻿TODO
 
 - basic HTML validation (for normal pages)
+    exclude mailtos in report
 - handle special cases for HTML (partial code from SSIs, PHP, etc.)
 - CSS validation
 - check links
+
+- parse output
+    only display broken links, errors
+- allow saving output to a file
+- enable a debug mode
 
 HELPFUL COMMANDS
 

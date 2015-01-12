@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Devon Broglie
 # script to run validators on project directories for Computational Methods in the Humanities
 
@@ -63,6 +65,7 @@ def validate_css(file):
     #return output
 
 # validate links for html pages
+# need to filter out mailto links and settings displayed on each command
 def check_links(file):
     output = ''
     command = 'checklink ' + file
@@ -72,6 +75,7 @@ def check_links(file):
 # ****************************** MAIN LOGIC ******************************    
 
 # check if path was specified
+# check for trailing /
 if (len(sys.argv) > 1):
     directory = sys.argv[1]
 else:
@@ -83,7 +87,7 @@ paths = get_filepaths(directory)
 # loop over files
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
-        if 'include' not in path:
+        if '/include/' not in path and '/inc/' not in path:
             '''
             # append path name
             html_output = html_output + '\n' + path
@@ -97,7 +101,7 @@ for path in paths:
             print 'HTML VALIDATION: \n'
             validate_html(path)
             print '\nCHECKING LINKS: \n'
-            check_links(path)            
+            check_links(path)
         # run css validator and append output
         #css_output = html_output + '\n' + validate_css(path)
         
