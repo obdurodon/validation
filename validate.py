@@ -43,6 +43,7 @@ def get_filepaths(dir):
 def run_command(command):
     output = ''
     output = subprocess32.check_output(command, stderr=subprocess32.STDOUT, shell=True)
+    print output
     return output
     
 # validate html files
@@ -51,7 +52,7 @@ def validate_html(file):
     url = get_url(file)
     command = "html-validator " + url + " --validator='http://html5.validator.nu'"
     output = run_command(command)
-    return output
+    #return output
 
 # validate css files
 def validate_css(file):
@@ -59,12 +60,14 @@ def validate_css(file):
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
     output = ''
-    return output
+    #return output
 
 # validate links for html pages
 def check_links(file):
     output = ''
-    return output
+    command = 'checklink ' + file
+    output = run_command(command)
+    #return output
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -81,16 +84,25 @@ paths = get_filepaths(directory)
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if 'include' not in path:
+            '''
             # append path name
             html_output = html_output + '\n' + path
             # run html validator and append output
             html_output = html_output + '\n' + validate_html(path)
+            # check links and append output
+            html_output = html_output + '\n' + check_links(path) + '\n'
+            '''
+            print path + '\n'
+            print 'HTML VALIDATION: \n'
+            validate_html(path)
+            print '\nCHECKING LINKS: \n'
+            check_links(path)
+            print '\n'
         # run css validator and append output
-        css_output = html_output + '\n' + validate_css(path)
-        # check links and append output
-        html_output = html_output + '\n' + check_links(path)
+        #css_output = html_output + '\n' + validate_css(path)
+        
         
         
 # print output
-print html_output
-print css_output
+#print html_output
+#print css_output
