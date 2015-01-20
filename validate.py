@@ -68,6 +68,7 @@ def validate_css(file):
     
     data = {}
     data['uri'] = file_url
+    # data['output'] = 'soap12'
     data['output'] = 'text/plain'
     data['profile'] = 'css3'
     data['warning'] = 'no'
@@ -82,7 +83,7 @@ def validate_css(file):
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     output = ''
-    command = 'checklink ' + file
+    command = 'checklink -s ' + file
     output = run_command(command)
     #return output
     
@@ -116,8 +117,8 @@ for path in paths:
             validate_html(path)
             print 'CSS VALIDATION: \n'
             validate_css(path)
-            #print '\nCHECKING LINKS: \n'
-            #check_links(path)
+            print '\nCHECKING LINKS: \n'
+            check_links(path)
         # run css validator and append output
         #css_output = html_output + '\n' + validate_css(path)
         
