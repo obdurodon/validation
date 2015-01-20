@@ -1,0 +1,641 @@
+
+FILE: /var/www/html/folk/italian.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 2, column 61
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Error: Bad value “Content-Type” for attribute “http-equiv” on XHTML element “meta”.
+From line 5, column 7; to line 5, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 70, column 14; to line 70, column 67
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 71, column 14; to line 71, column 57
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 72, column 14; to line 72, column 81
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 73, column 14; to line 73, column 71
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 74, column 14; to line 74, column 59
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 75, column 14; to line 75, column 69
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 76, column 14; to line 76, column 85
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 77, column 14; to line 77, column 83
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 78, column 14; to line 78, column 67
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 79, column 14; to line 79, column 95
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 84, column 17; to line 84, column 70
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 126, column 17; to line 126, column 60
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 170, column 17; to line 170, column 84
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 212, column 17; to line 212, column 74
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 252, column 17; to line 252, column 62
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 292, column 17; to line 292, column 72
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 328, column 17; to line 328, column 88
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 384, column 17; to line 384, column 86
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 437, column 17; to line 437, column 70
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 497, column 17; to line 497, column 98
+There were errors.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/italian.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 512
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 20 anchors.
+
+
+
+FILE: /var/www/html/folk/themeCount.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/themeCount.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 118
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 2 anchors.
+
+
+
+FILE: /var/www/html/folk/songs.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/songs.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 30
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/resources.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/resources.xhtml
+
+This may take some time if the document has many links to check.
+
+
+List of broken links and other issues:
+
+file:///var/www/html/XML/ThemeAndCount.xml	
+  Line: 27
+  Code: 404 File `/var/www/html/XML/ThemeAndCount.xml' does not exist
+ To do: The link is broken. Double-check that you have not made any typo,
+	or mistake in copy-pasting. If the link points to a resource that
+	no longer exists, you may want to remove or fix the link.
+
+file:///var/www/html/XML/AllSongs.xml	
+  Line: 26
+  Code: 404 File `/var/www/html/XML/AllSongs.xml' does not exist
+ To do: The link is broken. Double-check that you have not made any typo,
+	or mistake in copy-pasting. If the link points to a resource that
+	no longer exists, you may want to remove or fix the link.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 56
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/spanish.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 2, column 61
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Error: Bad value “Content-Type” for attribute “http-equiv” on XHTML element “meta”.
+From line 5, column 7; to line 5, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 70, column 14; to line 70, column 71
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 71, column 14; to line 71, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 72, column 14; to line 72, column 69
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 73, column 14; to line 73, column 67
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 74, column 14; to line 74, column 69
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 75, column 14; to line 75, column 65
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 76, column 14; to line 76, column 57
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 77, column 14; to line 77, column 83
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 78, column 14; to line 78, column 63
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 79, column 14; to line 79, column 77
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 84, column 17; to line 84, column 74
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 141, column 17; to line 141, column 78
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 190, column 17; to line 190, column 72
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 268, column 17; to line 268, column 70
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 308, column 17; to line 308, column 72
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 378, column 17; to line 378, column 68
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 412, column 17; to line 412, column 60
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 458, column 17; to line 458, column 86
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 499, column 17; to line 499, column 66
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 544, column 17; to line 544, column 80
+There were errors.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/spanish.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 512
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 20 anchors.
+
+
+
+FILE: /var/www/html/folk/oldSubthemeTable.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 2, column 61
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Warning: The “border” attribute on the “table” element is presentational markup. Consider using CSS instead. For example: “table, td, th { border: 1px solid gray }”
+From line 78, column 10; to line 78, column 27
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/oldSubthemeTable.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 1916
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/about.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/about.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 55
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/methodology.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/methodology.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 62
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/index.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/index.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 30
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/subthemeTable.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Warning: The “border” attribute on the “table” element is presentational markup. Consider using CSS instead. For example: “table, td, th { border: 1px solid gray }”
+From line 81, column 13; to line 81, column 30
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/subthemeTable.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 1013
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/english.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 2, column 61
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Error: Bad value “Content-Type” for attribute “http-equiv” on XHTML element “meta”.
+From line 5, column 7; to line 5, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 70, column 14; to line 70, column 67
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 71, column 14; to line 71, column 55
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 72, column 14; to line 72, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 73, column 14; to line 73, column 73
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 74, column 14; to line 74, column 69
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 75, column 14; to line 75, column 71
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 76, column 14; to line 76, column 51
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 77, column 14; to line 77, column 95
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 78, column 14; to line 78, column 71
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 79, column 14; to line 79, column 101
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 84, column 17; to line 84, column 70
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 157, column 17; to line 157, column 58
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 225, column 17; to line 225, column 78
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 289, column 17; to line 289, column 76
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 344, column 17; to line 344, column 72
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 396, column 17; to line 396, column 74
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 472, column 17; to line 472, column 54
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 529, column 17; to line 529, column 98
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 636, column 17; to line 636, column 74
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 696, column 17; to line 696, column 104
+There were errors.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/english.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 687
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 20 anchors.
+
+
+
+FILE: /var/www/html/folk/analysis.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 3, column 74
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+The document validates according to the specified schema(s) and to additional constraints checked by the validator.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/analysis.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 70
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/japanese.xhtml
+HTML VALIDATION: 
+Info: The Content-Type was “application/xhtml+xml”. Using the XML parser (not resolving external entities).
+Warning: skipping entity: [dtd]
+At line 2, column 61
+Info: Using the preset for XHTML with SVG 1.1, MathML 3.0, RDFa 1.1, and ITS 2.0 support based on the root namespace.
+Error: Bad value “Content-Type” for attribute “http-equiv” on XHTML element “meta”.
+From line 5, column 7; to line 5, column 75
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 70, column 14; to line 70, column 145
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 71, column 14; to line 71, column 145
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 72, column 14; to line 72, column 109
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 73, column 14; to line 73, column 145
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 74, column 14; to line 74, column 127
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 75, column 14; to line 75, column 91
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 76, column 14; to line 76, column 73
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 77, column 14; to line 77, column 127
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 78, column 14; to line 78, column 109
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 79, column 14; to line 79, column 145
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 84, column 17; to line 84, column 148
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 190, column 17; to line 190, column 148
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 222, column 17; to line 222, column 112
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 270, column 17; to line 270, column 148
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 308, column 17; to line 308, column 130
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 335, column 17; to line 335, column 94
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 371, column 17; to line 371, column 76
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 407, column 17; to line 407, column 130
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 435, column 17; to line 435, column 112
+Warning: The “name” attribute is obsolete. Consider putting an “id” attribute on the nearest container instead.
+From line 483, column 17; to line 483, column 148
+There were errors.
+
+
+
+CSS VALIDATION: 
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/japanese.xhtml
+
+This may take some time if the document has many links to check.
+
+
+Valid links.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 464
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 20 anchors.
+
+

@@ -8,20 +8,20 @@ import sys
 import subprocess32
 import urllib
 import urllib2
-
+from datetime import datetime
 
 # global variables
 directory = ''
+dir_name = ''
 paths = []
-html_output = 'HTML VALIDATION\n'
-css_output = 'CSS VALIDATION\n'
+file_output = ''
+save_output = None
 
 # ****************************** AUXILLARY METHODS ***********************
 
 # get base URL for project site
 def get_url(path):
-    dir_path = directory.split('/')
-    dir_name = dir_path[-1]
+    global dir_name
     file_path = path.split('/')
     filename = file_path[-1]
     url = 'http://' + dir_name + '.obdurodon.org/' + filename
@@ -52,16 +52,18 @@ def run_command(command):
 # validate html files
 # https://www.npmjs.com/package/html-validator
 def validate_html(file):
+    global file_output
     url = get_url(file)
     command = "html-validator " + url + " --validator='http://html5.validator.nu'"
     output = run_command(command)
-    #return output
+    file_output = file_output + "HTML VALIDATION: \n" + output + "\n\n"
 
 # validate css files
 def validate_css(file):
     # encode URL
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
+    global file_output
     output = ''
     base_url = 'http://jigsaw.w3.org/css-validator/validator'
     file_url = get_url(file)
@@ -78,14 +80,18 @@ def validate_css(file):
     output = urllib2.urlopen(url)
     
     print output.read()
+    
+    output = output.read()
+    file_output = file_output + "CSS VALIDATION: \n" + output + "\n\n"
 
 # validate links for html pages
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
+    global file_output
     output = ''
     command = 'checklink -s ' + file
-    output = run_command(command)
-    #return output
+    output = run_command(command)    
+    file_output = file_output + "CHECKING LINKS: \n" + output + "\n\n"
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -93,9 +99,19 @@ def check_links(file):
 # check for trailing /
 if (len(sys.argv) > 1):
     directory = sys.argv[1]
+    if directory[-1] == '/':
+        directory = directory[:-1]
+    if (len(sys.argv) > 2):
+        if sys.argv[2] == '-s':
+            save_output = True
 else:
     directory = os.getcwd()
-    
+
+# get just directory name
+dir_path = directory.split('/')
+dir_name = dir_path[-1]
+
+
 # get file paths for directory
 paths = get_filepaths(directory)
 
@@ -103,27 +119,23 @@ paths = get_filepaths(directory)
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if '/include/' not in path and '/inc/' not in path:
-            '''
-            # append path name
-            html_output = html_output + '\n' + path
-            # run html validator and append output
-            html_output = html_output + '\n' + validate_html(path)
-            # check links and append output
-            html_output = html_output + '\n' + check_links(path) + '\n'
-            '''
             print '*' * 80
             print 'FILE: ' + path + '\n'
+            file_output = file_output + '\nFILE: ' + path + '\n'
             print 'HTML VALIDATION: \n'
             validate_html(path)
             print 'CSS VALIDATION: \n'
             validate_css(path)
             print '\nCHECKING LINKS: \n'
             check_links(path)
-        # run css validator and append output
-        #css_output = html_output + '\n' + validate_css(path)
-        
-        
-        
-# print output
-#print html_output
-#print css_output
+            
+if save_output:
+    # create file name
+    date = datetime.now().strftime("%Y%m%d-%H%M%S")
+    filename = 'validation-' + dir_name+ '-' + date + '.txt'
+    # open file
+    f = open(filename, 'wb')
+    # write output to file
+    f.write(file_output)
+    # close file
+    f.close()

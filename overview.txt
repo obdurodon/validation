@@ -11,7 +11,7 @@
 OPTIONS
 - make checking links an option to save time checking static pages?
 - debug mode with all output
-- save output to file
+- save output to file (-s)
 - css profile type choice?
 
 HELPFUL COMMANDS
