@@ -6,8 +6,9 @@
 import os
 import sys
 import subprocess32
-from multiprocessing import Process
-import time
+import urllib
+import urllib2
+
 
 # global variables
 directory = ''
@@ -62,7 +63,20 @@ def validate_css(file):
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
     output = ''
-    #return output
+    base_url = 'http://jigsaw.w3.org/css-validator/validator'
+    file_url = get_url(file)
+    
+    data = {}
+    data['uri'] = file_url
+    data['output'] = 'text/plain'
+    data['profile'] = 'css3'
+    data['warning'] = 'no'
+    url_values = urllib.urlencode(data)
+    
+    url = base_url + '?' + url_values    
+    output = urllib2.urlopen(url)
+    
+    print output.read()
 
 # validate links for html pages
 # need to filter out mailto links and settings displayed on each command
@@ -96,12 +110,14 @@ for path in paths:
             # check links and append output
             html_output = html_output + '\n' + check_links(path) + '\n'
             '''
-            print '*' * 100
+            print '*' * 80
             print 'FILE: ' + path + '\n'
             print 'HTML VALIDATION: \n'
             validate_html(path)
-            print '\nCHECKING LINKS: \n'
-            check_links(path)
+            print 'CSS VALIDATION: \n'
+            validate_css(path)
+            #print '\nCHECKING LINKS: \n'
+            #check_links(path)
         # run css validator and append output
         #css_output = html_output + '\n' + validate_css(path)
         
