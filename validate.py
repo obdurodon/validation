@@ -78,10 +78,10 @@ def validate_css(file):
     
     url = base_url + '?' + url_values    
     output = urllib2.urlopen(url)
-    
-    print output.read()
-    
     output = output.read()
+    
+    print output    
+    
     file_output = file_output + "CSS VALIDATION: \n" + output + "\n\n"
 
 # validate links for html pages
