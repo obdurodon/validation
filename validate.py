@@ -9,6 +9,8 @@ import subprocess32
 import urllib
 import urllib2
 from datetime import datetime
+from bs4 import BeautifulSoup
+import xml.etree.cElementTree as ET
 
 # global variables
 directory = ''
@@ -16,6 +18,7 @@ dir_name = ''
 paths = []
 file_output = ''
 save_output = None
+namespaces = {'m':'http://www.w3.org/2005/07/css-validator'}
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -64,25 +67,56 @@ def validate_css(file):
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
     global file_output
+    formatted_output = ''
     output = ''
     base_url = 'http://jigsaw.w3.org/css-validator/validator'
     file_url = get_url(file)
     
     data = {}
     data['uri'] = file_url
-    # data['output'] = 'soap12'
-    data['output'] = 'text/plain'
+    data['output'] = 'soap12'
+    # data['output'] = 'text/plain'
     data['profile'] = 'css3'
     data['warning'] = 'no'
     url_values = urllib.urlencode(data)
     
-    url = base_url + '?' + url_values    
-    output = urllib2.urlopen(url)
-    output = output.read()
+    url = base_url + '?' + url_values
+    response = urllib2.urlopen(url)
     
-    print output    
+    output = response.read()
+    root = ET.fromstring(output)
     
-    file_output = file_output + "CSS VALIDATION: \n" + output + "\n\n"
+    error_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}errorcount').text)
+    
+    if error_count == 0:
+        formatted_output = "No errors.\n"
+    else:
+        formatted_output = 'Errors\n\n'
+        
+        for error in root.findall('.//{http://www.w3.org/2005/07/css-validator}error'):
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
+            formatted_output = formatted_output + ': '
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}context').text.strip()
+            formatted_output = formatted_output + '\n'
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            formatted_output = formatted_output + '\n\n'
+        
+    warning_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}warningcount').text)
+    
+    if warning_count == 0:
+        formatted_output = formatted_output + "No warnings.\n"
+    else:
+        formatted_output = formatted_output + '\nWarnings\n\n'
+        
+        for warning in root.findall('.//{http://www.w3.org/2005/07/css-validator}warning'):
+            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
+            formatted_output = formatted_output + ': '
+            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            formatted_output = formatted_output + '\n\n'
+        
+    print formatted_output
+    
+    file_output = file_output + "CSS VALIDATION: \n" + formatted_output + "\n\n"
 
 # validate links for html pages
 # need to filter out mailto links and settings displayed on each command
