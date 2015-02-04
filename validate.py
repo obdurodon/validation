@@ -49,7 +49,6 @@ def get_filepaths(dir):
 def run_command(command):
     output = ''
     output = subprocess32.check_output(command, stderr=subprocess32.STDOUT, shell=True)
-    print output
     return output
     
 # validate html files
@@ -68,6 +67,7 @@ def validate_html(file):
     
     data = {}
     data['uri'] = file_url
+    data['doctype'] = 'HTML5'
     data['output'] = 'soap12'
     url_values = urllib.urlencode(data)
     
@@ -89,11 +89,12 @@ def validate_html(file):
         
         for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
+            col = error.find('.//{http://www.w3.org/2005/10/markup-validator}}col')
+            if col is not None:
+                formatted_output = formatted_output + ', '
+                formatted_output = formatted_output + col.text.strip()
             formatted_output = formatted_output + ': '
             '''
-            formatted_output = formatted_output + ', '
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}}col').text.strip()
-            formatted_output = formatted_output + ': '
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}}source').text.strip()
             formatted_output = formatted_output + '\n'
             '''
@@ -108,17 +109,21 @@ def validate_html(file):
         formatted_output = formatted_output + '\nWarnings\n\n'
         
         for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
-            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}line').text.strip()
-            formatted_output = formatted_output + ': '
-            '''
-            formatted_output = formatted_output + ', '
-            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}col').text.strip()
-            formatted_output = formatted_output + ': '
-            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}source').text.strip()
-            formatted_output = formatted_output + '\n'
-            '''
-            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}message').text.strip()
-            formatted_output = formatted_output + '\n\n'
+            line = warning.find('.//{http://www.w3.org/2005/10/markup-validator}line')
+            if line is not None:
+                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
+            
+                col = warning.find('.//{http://www.w3.org/2005/10/markup-validator}col')
+                if col is not None:
+                    formatted_output = formatted_output + ', '
+                    formatted_output = formatted_output + col.text.strip()
+                formatted_output = formatted_output + ': '
+                '''
+                formatted_output = formatted_output + warning.find('.{//http://www.w3.org/2005/10/markup-validator}source').text.strip()
+                formatted_output = formatted_output + '\n'
+                '''
+                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                formatted_output = formatted_output + '\n\n'
         
     print formatted_output
     
@@ -138,7 +143,6 @@ def validate_css(file):
     data = {}
     data['uri'] = file_url
     data['output'] = 'soap12'
-    # data['output'] = 'text/plain'
     data['profile'] = 'css3'
     data['warning'] = 'no'
     url_values = urllib.urlencode(data)
@@ -187,8 +191,13 @@ def check_links(file):
     global file_output
     output = ''
     command = 'checklink -s ' + file
-    output = run_command(command)    
-    file_output = file_output + "CHECKING LINKS: \n" + output + "\n\n"
+    output = run_command(command)
+    if 'Valid links' in output:
+        file_output = file_output + "CHECKING LINKS: \n Valid links. \n\n"
+        print 'Valid links.'
+    else:
+        file_output = file_output + "CHECKING LINKS: \n" + output + "\n\n"
+        print output
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -217,8 +226,8 @@ for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if '/include/' not in path and '/inc/' not in path:
             print '*' * 80
-            print 'FILE: ' + path + '\n'
-            file_output = file_output + '\nFILE: ' + path + '\n'
+            print 'FILE: ' + path + '\n\n'
+            file_output = file_output + '\nFILE: ' + path + '\n\n'
             print 'HTML VALIDATION: \n'
             validate_html(path)
             print 'CSS VALIDATION: \n'

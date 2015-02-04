@@ -2,6 +2,7 @@
 
 - basic HTML validation
     parse response...use SOAP response?
+    automatic detection not recognizing SVG with XHTML 1.0, works if overridden with HTML5
 - CSS validation
     parse response with beautiful soup?
 - check links
