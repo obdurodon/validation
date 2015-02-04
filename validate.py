@@ -80,13 +80,14 @@ def validate_html(file):
     
     root = ET.fromstring(output)
     
+    
+    formatted_output = 'Errors\n----------------------\n\n'
+    
     error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
     
     if error_count == 0:
-        formatted_output = "No errors.\n"
+        formatted_output = formatted_output + "No errors.\n"
     else:
-        formatted_output = 'Errors\n\n'
-        
         for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
             col = error.find('.//{http://www.w3.org/2005/10/markup-validator}}col')
@@ -101,13 +102,13 @@ def validate_html(file):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
             formatted_output = formatted_output + '\n\n'
         
+    formatted_output = formatted_output + '\nWarnings\n----------------------\n\n'
+    
     warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
     
     if warning_count == 0:
         formatted_output = formatted_output + 'No warnings.\n'
     else:
-        formatted_output = formatted_output + '\nWarnings\n\n'
-        
         for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
             line = warning.find('.//{http://www.w3.org/2005/10/markup-validator}line')
             if line is not None:
@@ -124,6 +125,10 @@ def validate_html(file):
                 '''
                 formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
                 formatted_output = formatted_output + '\n\n'
+                
+            else:
+                if warning_count == 1:
+                    formatted_output = formatted_output + 'No warnings.\n'
         
     print formatted_output
     
@@ -153,13 +158,13 @@ def validate_css(file):
     output = response.read()
     root = ET.fromstring(output)
     
+    formatted_output = 'Errors\n----------------------\n\n'
+    
     error_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}errorcount').text)
     
     if error_count == 0:
-        formatted_output = "No errors.\n"
+        formatted_output = formatted_output + "No errors.\n"
     else:
-        formatted_output = 'Errors\n\n'
-        
         for error in root.findall('.//{http://www.w3.org/2005/07/css-validator}error'):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
             formatted_output = formatted_output + ': '
@@ -168,13 +173,13 @@ def validate_css(file):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
             formatted_output = formatted_output + '\n\n'
         
+    formatted_output = formatted_output + '\nWarnings\n----------------------\n\n'
+    
     warning_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}warningcount').text)
     
     if warning_count == 0:
         formatted_output = formatted_output + "No warnings.\n"
     else:
-        formatted_output = formatted_output + '\nWarnings\n\n'
-        
         for warning in root.findall('.//{http://www.w3.org/2005/07/css-validator}warning'):
             formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
             formatted_output = formatted_output + ': '
@@ -194,7 +199,7 @@ def check_links(file):
     output = run_command(command)
     if 'Valid links' in output:
         file_output = file_output + "CHECKING LINKS: \n Valid links. \n\n"
-        print 'Valid links.'
+        print 'Valid links.\n\n'
     else:
         file_output = file_output + "CHECKING LINKS: \n" + output + "\n\n"
         print output
