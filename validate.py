@@ -53,13 +53,76 @@ def run_command(command):
     return output
     
 # validate html files
-# https://www.npmjs.com/package/html-validator
 def validate_html(file):
     global file_output
+    '''
     url = get_url(file)
     command = "html-validator " + url + " --validator='http://html5.validator.nu'"
     output = run_command(command)
     file_output = file_output + "HTML VALIDATION: \n" + output + "\n\n"
+    '''
+    formatted_output = ''
+    output = ''
+    base_url = 'http://validator.w3.org/check'
+    file_url = get_url(file)
+    
+    data = {}
+    data['uri'] = file_url
+    data['output'] = 'soap12'
+    url_values = urllib.urlencode(data)
+    
+    url = base_url + '?' + url_values
+    response = urllib2.urlopen(url)
+    
+    output = response.read()
+    
+    #print output 
+    
+    root = ET.fromstring(output)
+    
+    error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
+    
+    if error_count == 0:
+        formatted_output = "No errors.\n"
+    else:
+        formatted_output = 'Errors\n\n'
+        
+        for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
+            formatted_output = formatted_output + ': '
+            '''
+            formatted_output = formatted_output + ', '
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}}col').text.strip()
+            formatted_output = formatted_output + ': '
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}}source').text.strip()
+            formatted_output = formatted_output + '\n'
+            '''
+            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+            formatted_output = formatted_output + '\n\n'
+        
+    warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
+    
+    if warning_count == 0:
+        formatted_output = formatted_output + 'No warnings.\n'
+    else:
+        formatted_output = formatted_output + '\nWarnings\n\n'
+        
+        for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
+            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}line').text.strip()
+            formatted_output = formatted_output + ': '
+            '''
+            formatted_output = formatted_output + ', '
+            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}col').text.strip()
+            formatted_output = formatted_output + ': '
+            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}source').text.strip()
+            formatted_output = formatted_output + '\n'
+            '''
+            formatted_output = formatted_output + warning.find('.//http://www.w3.org/2005/10/markup-validator}message').text.strip()
+            formatted_output = formatted_output + '\n\n'
+        
+    print formatted_output
+    
+    file_output = file_output + "HTML VALIDATION: \n" + formatted_output + "\n\n"
 
 # validate css files
 def validate_css(file):
