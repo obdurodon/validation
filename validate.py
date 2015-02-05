@@ -27,7 +27,7 @@ def get_url(path):
     global dir_name
     file_path = path.split('/')
     filename = file_path[-1]
-    url = 'http://' + dir_name + '.obdurodon.org/' + filename
+    url = 'http://www.obdurodon.org/' + dir_name + '/' + filename
     return url
 
 # method taken from answer to StackOverflow question at link below, MAY WANT TO MODIFY TO ONLY DO HTML AND INCLUDES
