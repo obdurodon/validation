@@ -1,19 +1,26 @@
 ﻿TODO
-
+-- for css and html, if no errors remove headers
 - basic HTML validation
-    parse response...use SOAP response?
     automatic detection not recognizing SVG with XHTML 1.0, works if overridden with HTML5
+    require doctype to be html5 (simple or legacy?) unless switch for legacy where we'll override and make known
 - CSS validation
-    parse response with beautiful soup?
+    condense 
 - check links
     exclude mailtos
+    include redirects
+    don't need anchors
+    remove file:/// from links
+    hack the robot checking?
+    403 responses from actual site?
 
 
 OPTIONS
-- make checking links an option to save time checking static pages?
+- make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
 - debug mode with all output
 - save output to file (-s)
 - css profile type choice?
+- switch for legacy code
+- use specified directory
 
 HELPFUL COMMANDS
 
