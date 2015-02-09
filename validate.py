@@ -94,7 +94,7 @@ def validate_html(file):
         error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
         
         if error_count == 0:
-            formatted_output = formatted_output + "No errors.\n"
+            formatted_output = formatted_output + "No errors."
         else:
             formatted_output = 'Errors\n----------------------\n'
             for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
@@ -109,8 +109,6 @@ def validate_html(file):
                 formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
                 formatted_output = formatted_output + '\n'
             
-        formatted_output = formatted_output + '\n'
-        
         warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
         
         if warning_count == 0:

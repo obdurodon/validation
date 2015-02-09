@@ -1,4 +1,6 @@
 ﻿TODO
+- HTML validation
+    use bs4 subclass instead of assuming content[0]
 - check links
     exclude mailtos
     include redirects
@@ -8,7 +10,11 @@
         webcheck allows ignoring robots options but outputs an html file
     403 responses from actual site?
     
+    for ignored files, use urllib to get code
+    
 - add logic to check public_html directories
+    /home/usr_name/public_html
+    www.obdurodon.org/~usr_name/filename
 
 
 OPTIONS
@@ -27,3 +33,31 @@ sudo netstat -nlp | grep 8888
 
 directory for executable:
 /usr/local/bin
+
+LINK OUTPUT
+
+List of broken links and other issues:
+
+http://www.gutenberg.org/ebooks/15777
+  Line: 35
+  Code: 403 Forbidden
+ To do: The link is forbidden! This needs fixing. Usual suspects: a missing
+        index.html or Overview.html, or a missing ACL.
+
+http://www.gutenberg.org/ebooks/15869
+  Line: 36
+  Code: 403 Forbidden
+ To do: The link is forbidden! This needs fixing. Usual suspects: a missing
+        index.html or Overview.html, or a missing ACL.
+
+http://babel.hathitrust.org/cgi/pt?id=uc1.31822022888960;page=root;seq=623;view=plaintext;size=100;orient=0;num=594
+  Line: 26
+  Code: (N/A) Forbidden by robots.txt
+ To do: The link was not checked due to robots exclusion rules. Check the
+        link manually.
+
+http://babel.hathitrust.org/cgi/pt?id=uc1.31822022888960;seq=20;view=1up;num=i
+  Line: 26
+  Code: (N/A) Forbidden by robots.txt
+ To do: The link was not checked due to robots exclusion rules. Check the
+        link manually.
