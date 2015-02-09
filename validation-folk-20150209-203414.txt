@@ -1,0 +1,395 @@
+
+FILE: /var/www/html/folk/italian.xhtml
+
+HTML VALIDATION: 
+Errors
+----------------------
+5: Bad value Content-Type for attribute http-equiv on XHTML element meta.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+70, 67: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+71, 57: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+72, 81: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+73, 71: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+74, 59: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+75, 69: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+76, 85: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+77, 83: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+78, 67: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+79, 95: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+84, 70: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+126, 60: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+170, 84: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+212, 74: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+252, 62: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+292, 72: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+328, 88: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+384, 86: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+437, 70: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+497, 98: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/themeCount.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/songs.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/resources.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+
+Processing	file:///var/www/html/folk/resources.xhtml
+
+This may take some time if the document has many links to check.
+
+
+List of broken links and other issues:
+
+file:///var/www/html/XML/ThemeAndCount.xml	
+  Line: 27
+  Code: 404 File `/var/www/html/XML/ThemeAndCount.xml' does not exist
+ To do: The link is broken. Double-check that you have not made any typo,
+	or mistake in copy-pasting. If the link points to a resource that
+	no longer exists, you may want to remove or fix the link.
+
+file:///var/www/html/XML/AllSongs.xml	
+  Line: 26
+  Code: 404 File `/var/www/html/XML/AllSongs.xml' does not exist
+ To do: The link is broken. Double-check that you have not made any typo,
+	or mistake in copy-pasting. If the link points to a resource that
+	no longer exists, you may want to remove or fix the link.
+
+List of redirects
+
+https://i.creativecommons.org/l/by/4.0/88x31.png
+-> https://licensebuttons.net/l/by/4.0/88x31.png	
+  Line: 56
+  Code: 301 -> 200 OK
+ To do: This is a permanent redirect. The link should be updated.
+Anchors
+
+Found 0 anchors.
+
+
+
+FILE: /var/www/html/folk/spanish.xhtml
+
+HTML VALIDATION: 
+Errors
+----------------------
+5: Bad value Content-Type for attribute http-equiv on XHTML element meta.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+70, 71: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+71, 75: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+72, 69: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+73, 67: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+74, 69: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+75, 65: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+76, 57: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+77, 83: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+78, 63: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+79, 77: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+84, 74: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+141, 78: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+190, 72: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+268, 70: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+308, 72: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+378, 68: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+412, 60: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+458, 86: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+499, 66: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+544, 80: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/oldSubthemeTable.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+78, 27: The border attribute on the table element is presentational markup. Consider using CSS instead. For example: table, td, th { border: 1px solid gray }
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/about.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/methodology.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/index.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/subthemeTable.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+81, 30: The border attribute on the table element is presentational markup. Consider using CSS instead. For example: table, td, th { border: 1px solid gray }
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/english.xhtml
+
+HTML VALIDATION: 
+Errors
+----------------------
+5: Bad value Content-Type for attribute http-equiv on XHTML element meta.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+70, 67: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+71, 55: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+72, 75: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+73, 73: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+74, 69: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+75, 71: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+76, 51: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+77, 95: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+78, 71: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+79, 101: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+84, 70: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+157, 58: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+225, 78: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+289, 76: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+344, 72: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+396, 74: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+472, 54: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+529, 98: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+636, 74: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+696, 104: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/analysis.xhtml
+
+HTML VALIDATION: 
+No errors.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
+
+FILE: /var/www/html/folk/japanese.xhtml
+
+HTML VALIDATION: 
+Errors
+----------------------
+5: Bad value Content-Type for attribute http-equiv on XHTML element meta.
+
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+70, 145: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+71, 145: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+72, 109: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+73, 145: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+74, 127: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+75, 91: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+76, 73: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+77, 127: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+78, 109: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+79, 145: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+84, 148: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+190, 148: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+222, 112: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+270, 148: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+308, 130: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+335, 94: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+371, 76: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+407, 130: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+435, 112: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+483, 148: The name attribute is obsolete. Consider putting an id attribute on the nearest container instead.
+
+
+CSS VALIDATION: 
+No errors.
+
+No warnings.
+
+
+CHECKING LINKS: 
+ Valid links. 
+
