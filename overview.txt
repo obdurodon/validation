@@ -1,4 +1,5 @@
 ﻿TODO
+- consolidate to one line if no errors/warnings/broken links
 - HTML validation
     use bs4 subclass doctype instead of assuming content[0]
     fix 3.3 version
