@@ -1,6 +1,7 @@
 ﻿TODO
 - HTML validation
-    use bs4 subclass instead of assuming content[0]
+    use bs4 subclass doctype instead of assuming content[0]
+    fix 3.3 version
 - check links
     exclude mailtos
     include redirects
@@ -9,8 +10,8 @@
     hack the robot checking?
         webcheck allows ignoring robots options but outputs an html file
     403 responses from actual site?
-    
-    for ignored files, use urllib to get code
+        gutenberg bans non-humans? -- create list of blocked domains and give our own error message
+    for ignored files, use urllib to get status code
     
 - add logic to check public_html directories
     /home/usr_name/public_html
