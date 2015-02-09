@@ -1,10 +1,4 @@
 ﻿TODO
-- basic HTML validation
-    automatic detection not recognizing SVG with XHTML 1.0, works if overridden with HTML5
-    require doctype to be html5 (simple or legacy?) unless switch for legacy where we'll override and make known
-    simple = <!DOCTYPE html>
-    legacy = <!DOCTYPE html SYSTEM "about:legacy-compat">
-
 - check links
     exclude mailtos
     include redirects

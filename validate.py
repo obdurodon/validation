@@ -12,7 +12,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 import xml.etree.cElementTree as ET
 import re
-from HTMLParser import HTMLParser
+from optparse import OptionParser
 
 # global variables
 directory = ''
@@ -69,8 +69,7 @@ def validate_html(file):
     html = open(file).read()
     soup = BeautifulSoup(html)
     doctype = soup.contents[0]
-    
-    if doctype == html_5 or doctype == html_5_legacy:        
+    if (not options.legacy and (doctype == html_5 or doctype == html_5_legacy)) or options.legacy:      
         output = ''
         base_url = 'http://validator.w3.org/check'
         file_url = get_url(file)
@@ -78,7 +77,8 @@ def validate_html(file):
         data = {}
         data['uri'] = file_url
         # only override if legacy switch is on, otherwise let detect and throw error if not html 5?
-        #data['doctype'] = 'HTML5'
+        if options.legacy:
+            data['doctype'] = 'HTML5'
         data['output'] = 'soap12'
         url_values = urllib.urlencode(data)
         
@@ -130,7 +130,7 @@ def validate_html(file):
                 formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
                 formatted_output = formatted_output + '\n'
     else:
-        formatted_output = 'Must have an HTML 5 doctype to validate.\n'
+        formatted_output = 'Must have an HTML 5 doctype to validate or use legacy option.\n'
         
     print formatted_output
     
@@ -215,15 +215,22 @@ def check_links(file):
     
 # ****************************** MAIN LOGIC ******************************    
 
+# setup command line argument parser
+parser = OptionParser()
+
+parser.add_option('-s', '--save', action='store_true', dest='save_output', default=False, help='save output to a log file in current directory')
+parser.add_option('-d', '--directory', dest='directory', help='run validator in DIRECTORY', metavar='DIRECTORY')
+parser.add_option('-l', '--legacy', action='store_true', dest='legacy', default=False, help='override doctype declaration as html5')
+
+(options, args) = parser.parse_args()
+
 # check if path was specified
 # check for trailing /
-if (len(sys.argv) > 1):
-    directory = sys.argv[1]
+
+if options.directory is not None:
+    directory = options.directory
     if directory[-1] == '/':
         directory = directory[:-1]
-    if (len(sys.argv) > 2):
-        if sys.argv[2] == '-s':
-            save_output = True
 else:
     directory = os.getcwd()
 
@@ -249,7 +256,7 @@ for path in paths:
             print '\nCHECKING LINKS: \n'
             check_links(path)
             
-if save_output:
+if options.save_output:
     # create file name
     date = datetime.now().strftime("%Y%m%d-%H%M%S")
     filename = 'validation-' + dir_name+ '-' + date + '.txt'
