@@ -1,17 +1,20 @@
 ﻿TODO
--- for css and html, if no errors remove headers
 - basic HTML validation
     automatic detection not recognizing SVG with XHTML 1.0, works if overridden with HTML5
     require doctype to be html5 (simple or legacy?) unless switch for legacy where we'll override and make known
-- CSS validation
-    condense 
+    simple = <!DOCTYPE html>
+    legacy = <!DOCTYPE html SYSTEM "about:legacy-compat">
+
 - check links
     exclude mailtos
     include redirects
     don't need anchors
     remove file:/// from links
     hack the robot checking?
+        webcheck allows ignoring robots options but outputs an html file
     403 responses from actual site?
+    
+- add logic to check public_html directories
 
 
 OPTIONS
@@ -21,6 +24,7 @@ OPTIONS
 - css profile type choice?
 - switch for legacy code
 - use specified directory
+- project vs public directory
 
 HELPFUL COMMANDS
 

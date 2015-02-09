@@ -11,6 +11,8 @@ import urllib2
 from datetime import datetime
 from bs4 import BeautifulSoup
 import xml.etree.cElementTree as ET
+import re
+from HTMLParser import HTMLParser
 
 # global variables
 directory = ''
@@ -18,7 +20,6 @@ dir_name = ''
 paths = []
 file_output = ''
 save_output = None
-namespaces = {'m':'http://www.w3.org/2005/07/css-validator'}
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -54,81 +55,82 @@ def run_command(command):
 # validate html files
 def validate_html(file):
     global file_output
+    html_5 = 'html'
+    html_5_legacy = 'html SYSTEM "about:legacy-compat"'
+    formatted_output = ''
+    
     '''
     url = get_url(file)
     command = "html-validator " + url + " --validator='http://html5.validator.nu'"
     output = run_command(command)
     file_output = file_output + "HTML VALIDATION: \n" + output + "\n\n"
     '''
-    formatted_output = ''
-    output = ''
-    base_url = 'http://validator.w3.org/check'
-    file_url = get_url(file)
+    # use BeautifulSoup to check doctype before validating
+    html = open(file).read()
+    soup = BeautifulSoup(html)
+    doctype = soup.contents[0]
     
-    data = {}
-    data['uri'] = file_url
-    data['doctype'] = 'HTML5'
-    data['output'] = 'soap12'
-    url_values = urllib.urlencode(data)
-    
-    url = base_url + '?' + url_values
-    response = urllib2.urlopen(url)
-    
-    output = response.read()
-    
-    #print output 
-    
-    root = ET.fromstring(output)
-    
-    
-    formatted_output = 'Errors\n----------------------\n\n'
-    
-    error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
-    
-    if error_count == 0:
-        formatted_output = formatted_output + "No errors.\n"
-    else:
-        for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
-            col = error.find('.//{http://www.w3.org/2005/10/markup-validator}}col')
-            if col is not None:
-                formatted_output = formatted_output + ', '
-                formatted_output = formatted_output + col.text.strip()
-            formatted_output = formatted_output + ': '
-            '''
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}}source').text.strip()
-            formatted_output = formatted_output + '\n'
-            '''
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
-            formatted_output = formatted_output + '\n\n'
+    if doctype == html_5 or doctype == html_5_legacy:        
+        output = ''
+        base_url = 'http://validator.w3.org/check'
+        file_url = get_url(file)
         
-    formatted_output = formatted_output + '\nWarnings\n----------------------\n\n'
-    
-    warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
-    
-    if warning_count == 0:
-        formatted_output = formatted_output + 'No warnings.\n'
-    else:
-        for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
-            line = warning.find('.//{http://www.w3.org/2005/10/markup-validator}line')
-            if line is not None:
-                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
-            
-                col = warning.find('.//{http://www.w3.org/2005/10/markup-validator}col')
-                if col is not None:
-                    formatted_output = formatted_output + ', '
-                    formatted_output = formatted_output + col.text.strip()
-                formatted_output = formatted_output + ': '
-                '''
-                formatted_output = formatted_output + warning.find('.{//http://www.w3.org/2005/10/markup-validator}source').text.strip()
+        data = {}
+        data['uri'] = file_url
+        # only override if legacy switch is on, otherwise let detect and throw error if not html 5?
+        #data['doctype'] = 'HTML5'
+        data['output'] = 'soap12'
+        url_values = urllib.urlencode(data)
+        
+        url = base_url + '?' + url_values
+        response = urllib2.urlopen(url)
+        
+        output = response.read()
+        
+        #print output 
+        
+        root = ET.fromstring(output)
+        
+        error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
+        
+        if error_count == 0:
+            formatted_output = formatted_output + "No errors.\n"
+        else:
+            formatted_output = 'Errors\n----------------------\n'
+            for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
+                line = error.find('.//{http://www.w3.org/2005/10/markup-validator}line')
+                if line is not None:
+                    formatted_output = formatted_output + line.text.strip()
+                    col = error.find('.//{http://www.w3.org/2005/10/markup-validator}}col')
+                    if col is not None:
+                        formatted_output = formatted_output + ', '
+                        formatted_output = formatted_output + col.text.strip()
+                    formatted_output = formatted_output + ': '
+                formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
                 formatted_output = formatted_output + '\n'
-                '''
-                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
-                formatted_output = formatted_output + '\n\n'
+            
+        formatted_output = formatted_output + '\n'
+        
+        warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
+        
+        if warning_count == 0:
+            formatted_output = formatted_output + 'No warnings.\n'
+        else:
+            formatted_output = formatted_output + '\nWarnings\n----------------------\n'
+            for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
+                line = warning.find('.//{http://www.w3.org/2005/10/markup-validator}line')
+                if line is not None:
+                    formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
                 
-            else:
-                if warning_count == 1:
-                    formatted_output = formatted_output + 'No warnings.\n'
+                    col = warning.find('.//{http://www.w3.org/2005/10/markup-validator}col')
+                    if col is not None:
+                        formatted_output = formatted_output + ', '
+                        formatted_output = formatted_output + col.text.strip()
+                    formatted_output = formatted_output + ': '
+                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                formatted_output = formatted_output + '\n'
+    else:
+        formatted_output = 'Must have an HTML 5 doctype to validate.\n'
         
     print formatted_output
     
@@ -158,33 +160,40 @@ def validate_css(file):
     output = response.read()
     root = ET.fromstring(output)
     
-    formatted_output = 'Errors\n----------------------\n\n'
+    
     
     error_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}errorcount').text)
     
     if error_count == 0:
-        formatted_output = formatted_output + "No errors.\n"
+        formatted_output = "No errors.\n"
     else:
+        formatted_output = 'Errors\n----------------------\n'
         for error in root.findall('.//{http://www.w3.org/2005/07/css-validator}error'):
             formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
             formatted_output = formatted_output + ': '
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}context').text.strip()
+            context = error.find('.//{http://www.w3.org/2005/07/css-validator}context').text.strip()
+            context = context.replace('\n', ' ').replace('\r', '')
+            formatted_output = formatted_output + re.sub("\s\s+", " ", context)
             formatted_output = formatted_output + '\n'
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
-            formatted_output = formatted_output + '\n\n'
+            message = error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            message = message.replace('\n', ' ').replace('\r', '')
+            formatted_output = formatted_output + re.sub("\s\s+", " ", message)
+            formatted_output = formatted_output + '\n'
         
-    formatted_output = formatted_output + '\nWarnings\n----------------------\n\n'
+    formatted_output = formatted_output + '\n'
     
     warning_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}warningcount').text)
     
     if warning_count == 0:
         formatted_output = formatted_output + "No warnings.\n"
     else:
+        formatted_output = formatted_output + '\nWarnings\n----------------------\n'
         for warning in root.findall('.//{http://www.w3.org/2005/07/css-validator}warning'):
             formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
             formatted_output = formatted_output + ': '
-            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
-            formatted_output = formatted_output + '\n\n'
+            message = warning.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            formatted_output = formatted_output + message.replace('\n', ' ').replace('\r', '')
+            formatted_output = formatted_output + '\n'
         
     print formatted_output
     
