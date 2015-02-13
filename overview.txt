@@ -14,7 +14,9 @@
 - add logic to check public_html directories
     /home/usr_name/public_html
     www.obdurodon.org/~usr_name/filename
+- what do graceful page not found links do? redirect? test!
 - documentation on usage
+- php support....eventually
 
 OPTIONS
 - make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
