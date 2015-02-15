@@ -9,8 +9,7 @@ import subprocess32
 import urllib
 import urllib2
 from datetime import datetime
-from bs4 import BeautifulSoup
-from bs4 import Doctype
+from bs4 import BeautifulSoup, Doctype
 import xml.etree.cElementTree as ET
 import re
 from optparse import OptionParser
