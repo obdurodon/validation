@@ -43,7 +43,7 @@ def get_url(path):
     else:
         filename = file_path[-1]
         url = 'http://www.obdurodon.org/' + dir_name + '/' + filename
-    print url
+        
     return url
 
 # method taken from answer to StackOverflow question at link below, MAY WANT TO MODIFY TO ONLY DO HTML AND INCLUDES
@@ -135,25 +135,26 @@ def validate_html(file):
                     if col is not None:
                         warning_output = warning_output + ', '
                         warning_output = warning_output + col.text.strip()
-                    warning_output = formatted_output + ': '
-                warning_output = warning_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                    warning_output = warning_output + ': '
+                message = warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                warning_output = warning_output + message.replace('\n', ' ').replace('\r', '')
                 warning_output = warning_output + '\n'
         
         if not error_output and not warning_output:
-            formatted_output = formatted_output + 'No errors. No warnings.'
+            formatted_output = formatted_output + 'No errors. No warnings.\n'
         elif not error_output:
             formatted_output = formatted_output + '\nNo errors.\n'
             warning_output = '\nWarnings\n----------------------\n' + warning_output
-            formatted_output = formatted_output + warning_output + '\n'
+            formatted_output = formatted_output + warning_output
         elif not warning_output:
             error_output = '\nErrors\n----------------------\n' + error_output
             formatted_output = formatted_output + error_output
-            formatted_output = formatted_output + '\nNo warnings.\n\n'            
+            formatted_output = formatted_output + '\nNo warnings.\n'            
         else:
             error_output = '\nErrors\n----------------------\n' + error_output
             formatted_output = formatted_output + error_output
             warning_output = '\nWarnings\n----------------------\n' + warning_output
-            formatted_output = formatted_output + warning_output + '\n'
+            formatted_output = formatted_output + warning_output
     else:
         formatted_output = formatted_output + 'Must have an HTML 5 doctype to validate or use legacy option.\n'
         
@@ -213,11 +214,11 @@ def validate_css(file):
             warning_output = warning_output + '\n'
         
     if not error_output and not warning_output:
-        formatted_output = formatted_output + 'No errors. No warnings.'
+        formatted_output = formatted_output + 'No errors. No warnings.\n'
     elif not error_output:
         formatted_output = formatted_output + '\nNo errors.\n'
         warning_output = '\nWarnings\n----------------------\n' + warning_output
-        formatted_output = formatted_output + warning_output + '\n'
+        formatted_output = formatted_output + warning_output
     elif not warning_output:
         error_output = '\nErrors\n----------------------\n' + error_output
         formatted_output = formatted_output + error_output
@@ -226,7 +227,7 @@ def validate_css(file):
         error_output = '\nErrors\n----------------------\n' + error_output
         formatted_output = formatted_output + error_output
         warning_output = '\nWarnings\n----------------------\n' + warning_output
-        formatted_output = formatted_output + warning_output + '\n'
+        formatted_output = formatted_output + warning_output
             
     print formatted_output
     
@@ -254,11 +255,11 @@ def check_links(file):
 # setup command line argument parser
 parser = OptionParser()
 
-parser.add_option('-s', '--save', action='store_true', dest='save_output', default=False, help='save output to a log file in current directory')
+parser.add_option('-o', '--output', action='store_true', dest='save_output', default=False, help='save output to a log file in current directory')
 parser.add_option('-d', '--directory', dest='directory', help='run validator in DIRECTORY', metavar='DIRECTORY')
 parser.add_option('-l', '--legacy', action='store_true', dest='legacy', default=False, help='override doctype declaration as html5')
 parser.add_option('-u', '--userdir', action='store_true', dest='userdir', default=False, help='run validator in a public_html user directory')
-
+parser.add_option('-s', '--skiplinks', action='store_true', dest='skiplinks', default=False, help='skip link checking')
 (options, args) = parser.parse_args()
 
 # check if path was specified
@@ -288,7 +289,8 @@ for path in paths:
             file_output = file_output + '\nFILE: ' + path + '\n'
             validate_html(path)
             validate_css(path)
-            check_links(path)
+            if not options.skiplinks:
+                check_links(path)
             
 if options.save_output:
     # create file name

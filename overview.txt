@@ -6,10 +6,7 @@
     remove file:/// from links
     403 responses from actual site?
         gutenberg bans non-humans? -- create list of blocked domains and give our own error message
-    for robot.txt ignored files, use urllib to get status code    
-- add logic to check public_html directories
-    /home/usr_name/public_html
-    www.obdurodon.org/~usr_name/filename
+    for robot.txt ignored files, use urllib to get status code 
 - what do graceful page not found links do? redirect? test!
 - documentation on usage
 - php support....eventually
