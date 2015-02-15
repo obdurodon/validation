@@ -10,6 +10,7 @@ import urllib
 import urllib2
 from datetime import datetime
 from bs4 import BeautifulSoup
+from bs4 import Doctype
 import xml.etree.cElementTree as ET
 import re
 from optparse import OptionParser
@@ -26,9 +27,23 @@ save_output = None
 # get base URL for project site
 def get_url(path):
     global dir_name
+    url = ''
     file_path = path.split('/')
-    filename = file_path[-1]
-    url = 'http://www.obdurodon.org/' + dir_name + '/' + filename
+            
+    if options.userdir:
+        user = ''
+        index = 0;
+        for path in file_path:
+            if path == 'home':
+                user = file_path[index + 1]
+            index = index + 1
+            
+        filename = file_path[-1]
+        url = 'http://www.obdurodon.org/~' + user + '/' + filename
+    else:
+        filename = file_path[-1]
+        url = 'http://www.obdurodon.org/' + dir_name + '/' + filename
+    print url
     return url
 
 # method taken from answer to StackOverflow question at link below, MAY WANT TO MODIFY TO ONLY DO HTML AND INCLUDES
@@ -44,7 +59,13 @@ def get_filepaths(dir):
             file_paths.append(filepath)  # Add it to the list.
 
     return file_paths
-
+    
+# method taken from answer to StackOverflow question
+# http://stackoverflow.com/questions/2499358/get-document-doctype-with-beautifulsoup
+def get_doctype(soup):
+    items = [item for item in soup.contents if isinstance(item, Doctype)]
+    return items[0] if items else None
+    
 # method uses techniques from link below to run command line processes
 # http://stackoverflow.com/questions/4760215/running-shell-command-from-python-and-capturing-the-output
 def run_command(command):
@@ -57,18 +78,15 @@ def validate_html(file):
     global file_output
     html_5 = 'html'
     html_5_legacy = 'html SYSTEM "about:legacy-compat"'
-    formatted_output = ''
+    formatted_output = 'HTML VALIDATION: '
     
-    '''
-    url = get_url(file)
-    command = "html-validator " + url + " --validator='http://html5.validator.nu'"
-    output = run_command(command)
-    file_output = file_output + "HTML VALIDATION: \n" + output + "\n\n"
-    '''
     # use BeautifulSoup to check doctype before validating
     html = open(file).read()
     soup = BeautifulSoup(html)
-    doctype = soup.contents[0]
+    
+    doctype = ''
+    doctype = get_doctype(soup)
+    
     if (not options.legacy and (doctype == html_5 or doctype == html_5_legacy)) or options.legacy:      
         output = ''
         base_url = 'http://validator.w3.org/check'
@@ -87,52 +105,61 @@ def validate_html(file):
         
         output = response.read()
         
-        #print output 
-        
         root = ET.fromstring(output)
         
         error_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}errorcount').text)
+        warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
         
-        if error_count == 0:
-            formatted_output = formatted_output + "No errors."
-        else:
-            formatted_output = 'Errors\n----------------------\n'
+        error_output = ''
+        warning_output = ''
+        
+        if error_count > 0:
             for error in root.findall('.//{http://www.w3.org/2005/10/markup-validator}error'):
                 line = error.find('.//{http://www.w3.org/2005/10/markup-validator}line')
                 if line is not None:
-                    formatted_output = formatted_output + line.text.strip()
+                    error_output = error_output + line.text.strip()
                     col = error.find('.//{http://www.w3.org/2005/10/markup-validator}}col')
                     if col is not None:
-                        formatted_output = formatted_output + ', '
-                        formatted_output = formatted_output + col.text.strip()
-                    formatted_output = formatted_output + ': '
-                formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
-                formatted_output = formatted_output + '\n'
-            
-        warning_count = int(root.find('.//{http://www.w3.org/2005/10/markup-validator}warningcount').text)
-        
-        if warning_count == 0:
-            formatted_output = formatted_output + 'No warnings.\n'
-        else:
-            formatted_output = formatted_output + '\nWarnings\n----------------------\n'
+                        error_output = error_output + ', '
+                        error_output = error_output + col.text.strip()
+                    error_output = error_output + ': '
+                error_output = error_output + error.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                error_output = error_output + '\n'
+              
+        if warning_count > 0:
             for warning in root.findall('.//{http://www.w3.org/2005/10/markup-validator}warning'):
                 line = warning.find('.//{http://www.w3.org/2005/10/markup-validator}line')
                 if line is not None:
-                    formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
-                
+                    warning_output = warning_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}line').text.strip()
                     col = warning.find('.//{http://www.w3.org/2005/10/markup-validator}col')
                     if col is not None:
-                        formatted_output = formatted_output + ', '
-                        formatted_output = formatted_output + col.text.strip()
-                    formatted_output = formatted_output + ': '
-                formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
-                formatted_output = formatted_output + '\n'
+                        warning_output = warning_output + ', '
+                        warning_output = warning_output + col.text.strip()
+                    warning_output = formatted_output + ': '
+                warning_output = warning_output + warning.find('.//{http://www.w3.org/2005/10/markup-validator}message').text.strip()
+                warning_output = warning_output + '\n'
+        
+        if not error_output and not warning_output:
+            formatted_output = formatted_output + 'No errors. No warnings.'
+        elif not error_output:
+            formatted_output = formatted_output + '\nNo errors.\n'
+            warning_output = '\nWarnings\n----------------------\n' + warning_output
+            formatted_output = formatted_output + warning_output + '\n'
+        elif not warning_output:
+            error_output = '\nErrors\n----------------------\n' + error_output
+            formatted_output = formatted_output + error_output
+            formatted_output = formatted_output + '\nNo warnings.\n\n'            
+        else:
+            error_output = '\nErrors\n----------------------\n' + error_output
+            formatted_output = formatted_output + error_output
+            warning_output = '\nWarnings\n----------------------\n' + warning_output
+            formatted_output = formatted_output + warning_output + '\n'
     else:
-        formatted_output = 'Must have an HTML 5 doctype to validate or use legacy option.\n'
+        formatted_output = formatted_output + 'Must have an HTML 5 doctype to validate or use legacy option.\n'
         
     print formatted_output
     
-    file_output = file_output + "HTML VALIDATION: \n" + formatted_output + "\n\n"
+    file_output = file_output + formatted_output
 
 # validate css files
 def validate_css(file):
@@ -140,7 +167,7 @@ def validate_css(file):
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
     global file_output
-    formatted_output = ''
+    formatted_output = 'CSS VALIDATION: '
     output = ''
     base_url = 'http://jigsaw.w3.org/css-validator/validator'
     file_url = get_url(file)
@@ -157,59 +184,70 @@ def validate_css(file):
     
     output = response.read()
     root = ET.fromstring(output)
-    
-    
-    
-    error_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}errorcount').text)
-    
-    if error_count == 0:
-        formatted_output = "No errors.\n"
-    else:
-        formatted_output = 'Errors\n----------------------\n'
-        for error in root.findall('.//{http://www.w3.org/2005/07/css-validator}error'):
-            formatted_output = formatted_output + error.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
-            formatted_output = formatted_output + ': '
-            context = error.find('.//{http://www.w3.org/2005/07/css-validator}context').text.strip()
-            context = context.replace('\n', ' ').replace('\r', '')
-            formatted_output = formatted_output + re.sub("\s\s+", " ", context)
-            formatted_output = formatted_output + '\n'
-            message = error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
-            message = message.replace('\n', ' ').replace('\r', '')
-            formatted_output = formatted_output + re.sub("\s\s+", " ", message)
-            formatted_output = formatted_output + '\n'
         
-    formatted_output = formatted_output + '\n'
-    
+    error_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}errorcount').text)
     warning_count = int(root.find('.//{http://www.w3.org/2005/07/css-validator}warningcount').text)
     
-    if warning_count == 0:
-        formatted_output = formatted_output + "No warnings.\n"
-    else:
-        formatted_output = formatted_output + '\nWarnings\n----------------------\n'
-        for warning in root.findall('.//{http://www.w3.org/2005/07/css-validator}warning'):
-            formatted_output = formatted_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
-            formatted_output = formatted_output + ': '
-            message = warning.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
-            formatted_output = formatted_output + message.replace('\n', ' ').replace('\r', '')
-            formatted_output = formatted_output + '\n'
+    error_output = ''
+    warning_output = ''
+    
+    if error_count > 0:
+        for error in root.findall('.//{http://www.w3.org/2005/07/css-validator}error'):
+            error_output = error_output + error.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
+            error_output = error_output + ': '
+            context = error.find('.//{http://www.w3.org/2005/07/css-validator}context').text.strip()
+            context = context.replace('\n', ' ').replace('\r', '')
+            error_output = error_output + re.sub("\s\s+", " ", context)
+            error_output = error_output + '\n'
+            message = error.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            message = message.replace('\n', ' ').replace('\r', '')
+            error_output = error_output + re.sub("\s\s+", " ", message)
+            error_output = error_output + '\n'
         
+    if warning_count > 0:
+        for warning in root.findall('.//{http://www.w3.org/2005/07/css-validator}warning'):
+            warning_output = warning_output + warning.find('.//{http://www.w3.org/2005/07/css-validator}line').text.strip()
+            warning_output = warning_output + ': '
+            message = warning.find('.//{http://www.w3.org/2005/07/css-validator}message').text.strip()
+            warning_output = warning_output + message.replace('\n', ' ').replace('\r', '')
+            warning_output = warning_output + '\n'
+        
+    if not error_output and not warning_output:
+        formatted_output = formatted_output + 'No errors. No warnings.'
+    elif not error_output:
+        formatted_output = formatted_output + '\nNo errors.\n'
+        warning_output = '\nWarnings\n----------------------\n' + warning_output
+        formatted_output = formatted_output + warning_output + '\n'
+    elif not warning_output:
+        error_output = '\nErrors\n----------------------\n' + error_output
+        formatted_output = formatted_output + error_output
+        formatted_output = formatted_output + '\nNo warnings.\n'            
+    else:
+        error_output = '\nErrors\n----------------------\n' + error_output
+        formatted_output = formatted_output + error_output
+        warning_output = '\nWarnings\n----------------------\n' + warning_output
+        formatted_output = formatted_output + warning_output + '\n'
+            
     print formatted_output
     
-    file_output = file_output + "CSS VALIDATION: \n" + formatted_output + "\n\n"
+    file_output = file_output + formatted_output
 
 # validate links for html pages
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     global file_output
     output = ''
+    formatted_output = ''
     command = 'checklink -s ' + file
     output = run_command(command)
     if 'Valid links' in output:
-        file_output = file_output + "CHECKING LINKS: \n Valid links. \n\n"
-        print 'Valid links.\n\n'
+        formatted_output = formatted_output + "LINK CHECKING: Valid links. \n"
     else:
-        file_output = file_output + "CHECKING LINKS: \n" + output + "\n\n"
-        print output
+        formatted_output = formatted_output + "LINK CHECKING: \n" + output + "\n"
+        
+    print formatted_output
+    
+    file_output = file_output + formatted_output
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -219,6 +257,7 @@ parser = OptionParser()
 parser.add_option('-s', '--save', action='store_true', dest='save_output', default=False, help='save output to a log file in current directory')
 parser.add_option('-d', '--directory', dest='directory', help='run validator in DIRECTORY', metavar='DIRECTORY')
 parser.add_option('-l', '--legacy', action='store_true', dest='legacy', default=False, help='override doctype declaration as html5')
+parser.add_option('-u', '--userdir', action='store_true', dest='userdir', default=False, help='run validator in a public_html user directory')
 
 (options, args) = parser.parse_args()
 
@@ -245,13 +284,10 @@ for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if '/include/' not in path and '/inc/' not in path:
             print '*' * 80
-            print 'FILE: ' + path + '\n\n'
-            file_output = file_output + '\nFILE: ' + path + '\n\n'
-            print 'HTML VALIDATION: \n'
+            print 'FILE: ' + path + '\n'
+            file_output = file_output + '\nFILE: ' + path + '\n'
             validate_html(path)
-            print 'CSS VALIDATION: \n'
             validate_css(path)
-            print '\nCHECKING LINKS: \n'
             check_links(path)
             
 if options.save_output:
