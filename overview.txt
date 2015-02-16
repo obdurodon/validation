@@ -11,6 +11,8 @@
 - what do graceful page not found links do? redirect? test!
 - documentation on usage
 - php support....eventually (option to ignore php)
+- error files before clean files
+- check portability
 
 OPTIONS
 done
