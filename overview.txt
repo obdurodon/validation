@@ -1,4 +1,5 @@
 ﻿TODO
+- validate css by file rather than html
 - check links
     exclude mailtos
     include redirects
@@ -9,16 +10,20 @@
     for robot.txt ignored files, use urllib to get status code 
 - what do graceful page not found links do? redirect? test!
 - documentation on usage
-- php support....eventually
+- php support....eventually (option to ignore php)
 
 OPTIONS
+done
 - make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
-- debug mode with all output
 - save output to file (-s)
-- css profile type choice?
 - switch for legacy code
 - use specified directory
 - project vs public directory
+to do
+- css profile type choice?
+- debug mode with all output
+- turn off html validation
+- turn off css validation
 
 HELPFUL COMMANDS
 
