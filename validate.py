@@ -279,7 +279,7 @@ dir_name = dir_path[-1]
 # get file paths for directory
 paths = get_filepaths(directory)
 
-# loop over files
+# loop over files for html/link validation
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if '/include/' not in path and '/inc/' not in path:
@@ -287,9 +287,16 @@ for path in paths:
             print 'FILE: ' + path + '\n'
             file_output = file_output + '\nFILE: ' + path + '\n'
             validate_html(path)
-            validate_css(path)
             if not options.skiplinks:
                 check_links(path)
+                
+# loop over files for css validation
+for path in paths:
+    if path.endswith('.css'):
+        print '*' * 80
+        print 'FILE: ' + path + '\n'
+        file_output = file_output + '\nFILE: ' + path + '\n'
+        validate_css(path)
             
 if options.save_output:
     # create file name

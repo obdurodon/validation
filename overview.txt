@@ -1,5 +1,4 @@
 ﻿TODO
-- validate css by file rather than html
 - check links
     exclude mailtos
     include redirects
@@ -28,9 +27,6 @@ to do
 - turn off css validation
 
 HELPFUL COMMANDS
-
-to check ports:
-sudo netstat -nlp | grep 8888
 
 directory for executable:
 /usr/local/bin
