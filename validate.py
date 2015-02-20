@@ -236,14 +236,58 @@ def validate_css(file):
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     global file_output
+    domains = ['gutenberg']
     output = ''
     formatted_output = ''
+    error_output = ''
     command = 'checklink -s ' + file
     output = run_command(command)
     if 'Valid links' in output:
         formatted_output = formatted_output + "LINK CHECKING: Valid links. \n"
     else:
-        formatted_output = formatted_output + "LINK CHECKING: \n" + output + "\n"
+        formatted_output = formatted_output + "LINK CHECKING: \n"
+        
+        lines = [line for line in output.split('\n') if line.strip() != '']
+        
+        count = 0
+        
+        while count < len(lines):
+            if 'List of broken links' in lines[count]:
+                count = count + 1
+                while ((count < len(lines)) and ('redirect' not in lines[count]) and ('Anchors' not in lines[count])):
+                    # boolean to check link not in forbidden domains
+                    forbidden = False
+                    
+                    link = lines[count]
+                    line_info = lines[count+1]
+                    code = lines[count+2]
+                    to_do = lines[count+3]
+                    
+                    for domain in domains:
+                        if domain in link:
+                            forbidden = True
+                    
+                    if not forbidden:
+                        if 'robots.txt' in code:
+                            url = urllib2.urlopen(link)
+                            url_code = url.getcode()
+                            
+                            if url_code != 200:
+                                error_output = error_output + link + '\n' + line_info + '\n'
+                                error_output = error_output + '\tCode:' + url_code + '\n'
+                                # put some message 
+                                
+                        else:
+                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n' + to_do + '\n'
+                    else:
+                        error_output = error_output + link + '\n'+ line_info + '\n'
+                        error_output = error_output + '\tTo do: Must check manually. Site forbids validator.\n'
+                    
+                    count = count + 4
+            else:
+                count = count + 1;
+                
+        formatted_output = formatted_output + '\n' + 'List of broken links: \n' + error_output 
         
     print formatted_output
     
