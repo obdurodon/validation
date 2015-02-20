@@ -1,8 +1,8 @@
 ﻿TODO
 - fix url handling for subdirectories for css and html files
 - check links
+    don't need to do
     include redirects
-    remove file:/// from links
 - documentation on usage
 - php support....eventually (option to ignore php)
 - error files before clean files

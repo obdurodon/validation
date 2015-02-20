@@ -255,25 +255,26 @@ def check_links(file):
         
         while count < len(lines) and not found_broken:
             if 'List of broken links' in lines[count]:
+                found_broken = True
                 count = count + 2
                 while ((count < len(lines)) and ('redirect' not in lines[count]) and ('Anchors' not in lines[count])):
-                    if lines[count] == '':
-                        count = count + 1;
-                    found_broken = True
                     # boolean to check link not in forbidden domains
                     forbidden = False
                     
                     link = lines[count]
+                    if 'file:///' in link:
+                        link = link[7:]
+                        
                     line_info = lines[count+1]
                     code = lines[count+2]
                     
                     td_count = count + 2
-                    to_do = ''
+                    #to_do = ''
                     while (lines[td_count + 1] != '') and ('Anchors' not in lines[td_count + 1]) and ('redirect' not in lines[td_count + 1]):
                         td_count = td_count + 1
-                        line = lines[td_count].strip('\n')
-                        to_do = to_do + line
-                    to_do = re.sub( '\s+', ' ', to_do).strip()
+                        #line = lines[td_count].strip('\n')
+                        #to_do = to_do + line
+                    #to_do = re.sub( '\s+', ' ', to_do).strip()
                     
                     
                     count = td_count
@@ -290,18 +291,24 @@ def check_links(file):
                             
                             if url_code != 200:
                                 error_output = error_output + link + '\n' + line_info + '\n'
-                                error_output = error_output + '  Code:' + url_code + '\n\n'
-                                # put some message 
+                                error_output = error_output + '  Code:' + url_code + '\n'
                                 
                         else:
-                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n ' + to_do + '\n\n'
+                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n'
                     else:
-                        error_output = error_output + link + '\n'+ line_info + '\n'
-                        error_output = error_output + ' To do: Must check manually. Site forbids validator.\n\n'
+                        error_output = error_output + link + '\n' + line_info + '\n'
+                        error_output = error_output + ' To do: Must check manually. Site forbids validator.\n'
                     
                     count = count + 1
+                    
+                    if lines[count] == '':
+                        count = count + 1;
+                    
+                while ((count < len(lines)) and ('Anchors' not in lines[count])):
+                    #print lines[count]
+                    count = count + 1
             else:
-                count = count + 1;
+                count = count + 1
         
         if error_output:
             formatted_output = formatted_output + "LINK CHECKING: \n"
