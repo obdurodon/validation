@@ -1,17 +1,13 @@
 ﻿TODO
+- fix url handling for subdirectories for css and html files
 - check links
-    exclude mailtos
     include redirects
-    don't need anchors
     remove file:/// from links
-    403 responses from actual site?
-        gutenberg bans non-humans? -- create list of blocked domains and give our own error message
-    for robot.txt ignored files, use urllib to get status code 
-- what do graceful page not found links do? redirect? test!
 - documentation on usage
 - php support....eventually (option to ignore php)
 - error files before clean files
 - check portability
+- check file naming and extensions (report html ext as bad)
 
 OPTIONS
 done

@@ -13,6 +13,7 @@ from bs4 import BeautifulSoup, Doctype
 import xml.etree.cElementTree as ET
 import re
 from optparse import OptionParser
+import textwrap
 
 # global variables
 directory = ''
@@ -245,8 +246,6 @@ def check_links(file):
     if 'Valid links' in output:
         formatted_output = formatted_output + "LINK CHECKING: Valid links. \n"
     else:
-        formatted_output = formatted_output + "LINK CHECKING: \n"
-        
         lines = output.split('\n')
         #lines = [line for line in output.split('\n') if line.strip() != '']
         
@@ -274,7 +273,8 @@ def check_links(file):
                         td_count = td_count + 1
                         line = lines[td_count].strip('\n')
                         to_do = to_do + line
-                    re.sub( '\s+', ' ', to_do).strip()
+                    to_do = re.sub( '\s+', ' ', to_do).strip()
+                    
                     
                     count = td_count
                     
@@ -290,20 +290,24 @@ def check_links(file):
                             
                             if url_code != 200:
                                 error_output = error_output + link + '\n' + line_info + '\n'
-                                error_output = error_output + '  Code:' + url_code + '\n'
+                                error_output = error_output + '  Code:' + url_code + '\n\n'
                                 # put some message 
                                 
                         else:
-                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n' + to_do + '\n'
+                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n ' + to_do + '\n\n'
                     else:
                         error_output = error_output + link + '\n'+ line_info + '\n'
-                        error_output = error_output + '  To do: Must check manually. Site forbids validator.\n'
+                        error_output = error_output + ' To do: Must check manually. Site forbids validator.\n\n'
                     
                     count = count + 1
             else:
                 count = count + 1;
-                
-        formatted_output = formatted_output + '\n' + 'List of broken links: \n' + error_output 
+        
+        if error_output:
+            formatted_output = formatted_output + "LINK CHECKING: \n"
+            formatted_output = formatted_output + 'List of broken links:\n----------------------\n' + error_output + '\n'
+        else:
+            formatted_output = formatted_output + "LINK CHECKING: Valid links. \n"
         
     print formatted_output
     
