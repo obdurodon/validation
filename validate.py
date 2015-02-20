@@ -247,25 +247,41 @@ def check_links(file):
     else:
         formatted_output = formatted_output + "LINK CHECKING: \n"
         
-        lines = [line for line in output.split('\n') if line.strip() != '']
+        lines = output.split('\n')
+        #lines = [line for line in output.split('\n') if line.strip() != '']
         
         count = 0
         
-        while count < len(lines):
+        found_broken = False
+        
+        while count < len(lines) and not found_broken:
             if 'List of broken links' in lines[count]:
-                count = count + 1
+                count = count + 2
                 while ((count < len(lines)) and ('redirect' not in lines[count]) and ('Anchors' not in lines[count])):
+                    if lines[count] == '':
+                        count = count + 1;
+                    found_broken = True
                     # boolean to check link not in forbidden domains
                     forbidden = False
                     
                     link = lines[count]
                     line_info = lines[count+1]
                     code = lines[count+2]
-                    to_do = lines[count+3]
+                    
+                    td_count = count + 2
+                    to_do = ''
+                    while (lines[td_count + 1] != '') and ('Anchors' not in lines[td_count + 1]) and ('redirect' not in lines[td_count + 1]):
+                        td_count = td_count + 1
+                        line = lines[td_count].strip('\n')
+                        to_do = to_do + line
+                    re.sub( '\s+', ' ', to_do).strip()
+                    
+                    count = td_count
                     
                     for domain in domains:
                         if domain in link:
                             forbidden = True
+                            break
                     
                     if not forbidden:
                         if 'robots.txt' in code:
@@ -274,16 +290,16 @@ def check_links(file):
                             
                             if url_code != 200:
                                 error_output = error_output + link + '\n' + line_info + '\n'
-                                error_output = error_output + '\tCode:' + url_code + '\n'
+                                error_output = error_output + '  Code:' + url_code + '\n'
                                 # put some message 
                                 
                         else:
                             error_output = error_output + link + '\n' + line_info + '\n' + code + '\n' + to_do + '\n'
                     else:
                         error_output = error_output + link + '\n'+ line_info + '\n'
-                        error_output = error_output + '\tTo do: Must check manually. Site forbids validator.\n'
+                        error_output = error_output + '  To do: Must check manually. Site forbids validator.\n'
                     
-                    count = count + 4
+                    count = count + 1
             else:
                 count = count + 1;
                 
