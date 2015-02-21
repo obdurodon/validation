@@ -1,0 +1,3033 @@
+
+FILE: /var/www/html/pacific/cookSecVoyageVol1.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/poems.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/VoyageAccounts.xhtml
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+LINK CHECKING: 
+List of broken links:
+----------------------
+http://www.gutenberg.org/ebooks/15777	
+  Line: 35
+ To do: Must check manually. Site forbids validator.
+http://www.gutenberg.org/ebooks/15869	
+  Line: 36
+ To do: Must check manually. Site forbids validator.
+
+FILE: /var/www/html/pacific/CookElegy1780testerfile.html
+HTML VALIDATION: 
+Errors
+----------------------
+125: The center element is obsolete. Use CSS instead.
+128: The element button must not appear as a descendant of the a element.
+131: The element button must not appear as a descendant of the a element.
+134: The element button must not appear as a descendant of the a element.
+137: The element button must not appear as a descendant of the a element.
+140: The element button must not appear as a descendant of the a element.
+143: The element button must not appear as a descendant of the a element.
+146: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/EccoLocSortType.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+6: Attribute xml:space not allowed on element script at this point.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/CookElegy1780.html
+HTML VALIDATION: 
+Errors
+----------------------
+5: Attribute xml:space not allowed on element script at this point.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+5, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/WorkinProgress.xhtml
+HTML VALIDATION: 
+Errors
+----------------------
+18: XHTML element ul not allowed as child of XHTML element p in this context. (Suppressing further errors from this subtree.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+LINK CHECKING: 
+List of broken links:
+----------------------
+http://maa.cam.ac.uk/tikiwiki/tiki-index.php?page=Staff%3A+Nicholas+Thomas	
+  Line: 25
+  Code: 404 Not Found
+http://dh.obdurodon.org/drupal/defining-geo-quotation-marks-and-special-characters	
+  Line: 27
+  Code: 403 Forbidden
+http://www.gutenberg.org/wiki/Gutenberg:About	
+  Line: 25
+ To do: Must check manually. Site forbids validator.
+http://www.gutenberg.org/ebooks/15777	
+  Line: 59
+ To do: Must check manually. Site forbids validator.
+http://www.gutenberg.org/ebooks/15869	
+  Line: 60
+ To do: Must check manually. Site forbids validator.
+
+FILE: /var/www/html/pacific/CookVoy2Map.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: & did not start a character reference. (& probably should have been escaped as &amp;.)
+101: Self-closing syntax (/>) used on a non-void HTML element. Ignoring the slash and treating as a start tag.
+106: End of file seen when expecting text or an end tag.
+101: Unclosed element iframe.
+93: Unclosed element div.
+106: End of file seen and there were open elements.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/Cookvoy1.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+354: Self-closing syntax (/>) used on a non-void HTML element. Ignoring the slash and treating as a start tag.
+357: End tag h2 seen, but there were open elements.
+354: Unclosed element a.
+475: Start tag a seen but an element of the same type was already open.
+475: End tag a violates nesting rules.
+475: Cannot recover after last error. Any further errors will be ignored.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/code.html
+HTML VALIDATION: 
+Errors
+----------------------
+57: The center element is obsolete. Use CSS instead.
+59: The element button must not appear as a descendant of the a element.
+60: The element button must not appear as a descendant of the a element.
+61: The element button must not appear as a descendant of the a element.
+62: The element button must not appear as a descendant of the a element.
+63: The element button must not appear as a descendant of the a element.
+64: The element button must not appear as a descendant of the a element.
+65: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/indexOLD.html
+HTML VALIDATION: 
+Errors
+----------------------
+18: Table column 3 established by element th has no cells beginning in it.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+117, 73: A table row was 2 columns wide, which is less than the column count established by the first row (3).
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/GoogleEarthHwks.html
+HTML VALIDATION: 
+Errors
+----------------------
+11: The center element is obsolete. Use CSS instead.
+13: The element button must not appear as a descendant of the a element.
+14: The element button must not appear as a descendant of the a element.
+15: The element button must not appear as a descendant of the a element.
+16: The element button must not appear as a descendant of the a element.
+17: The element button must not appear as a descendant of the a element.
+18: The element button must not appear as a descendant of the a element.
+19: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: 
+List of broken links:
+----------------------
+file://www.gmodules.com/ig/ifr?url=http://dl.google.com/developers/maps/embedkmlgadget.xml&up_kml_url=http%3A%2F%2Fpacific.obdurodon.org%2FCoordsHawkes.kml&up_view_mode=earth&up_earth_2d_fallback=1&up_earth_fly_from_space=1&up_earth_show_nav_controls=1&up_earth_show_buildings=1&up_earth_show_terrain=1&up_earth_show_roads=1&up_earth_show_borders=1&up_earth_sphere=earth&up_maps_zoom_out=1&up_maps_default_type=map&synd=open&w=500&h=400&title=Embedded+KML+Viewer&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js	
+  Line: 29
+  Code: 404 File `//www.gmodules.com/ig/ifr' does not exist
+
+FILE: /var/www/html/pacific/CookGeorgVoyageComp.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+98: & did not start a character reference. (& probably should have been escaped as &amp;.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+94, 16: Empty heading.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/about.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: 
+List of redirects:
+----------------------
+http://greensburg.pitt.edu/academics/faculty/elisa-e-besherobondar
+-> http://www.greensburg.pitt.edu/people/elisa-e-beshero-bondar-phd	
+  Line: 97
+  Code: 301 -> 200 OK
+http://greensburg.pitt.edu/academics/faculty/sayre-n-greenfield
+-> http://www.greensburg.pitt.edu/people/sayre-n-greenfield-phd	
+  Line: 97
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/CookElegy1780NewSpans.html
+HTML VALIDATION: 
+Errors
+----------------------
+6: Attribute xml:space not allowed on element script at this point.
+143: The center element is obsolete. Use CSS instead.
+146: The element button must not appear as a descendant of the a element.
+149: The element button must not appear as a descendant of the a element.
+152: The element button must not appear as a descendant of the a element.
+155: The element button must not appear as a descendant of the a element.
+158: The element button must not appear as a descendant of the a element.
+161: The element button must not appear as a descendant of the a element.
+164: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/EccoLocSortDate.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+6: Attribute xml:space not allowed on element script at this point.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/ForsterGeorgCompleteSB.html
+HTML VALIDATION: 
+Errors
+----------------------
+4: Stray end tag link.
+11: Stray end tag img.
+83: End tag br.
+87: Stray end tag img.
+90: The center element is obsolete. Use CSS instead.
+91: End tag br.
+93: The element button must not appear as a descendant of the a element.
+96: The element button must not appear as a descendant of the a element.
+99: The element button must not appear as a descendant of the a element.
+102: The element button must not appear as a descendant of the a element.
+105: The element button must not appear as a descendant of the a element.
+108: The element button must not appear as a descendant of the a element.
+111: The element button must not appear as a descendant of the a element.
+114: End tag br.
+563: End tag br.
+567: End tag br.
+1514: End tag br.
+1520: End tag br.
+2411: End tag br.
+2414: End tag br.
+2463: End tag br.
+2465: End tag br.
+2467: End tag br.
+3232: End tag br.
+3236: End tag br.
+3367: End tag br.
+3369: End tag br.
+3371: End tag br.
+4216: End tag br.
+4219: End tag br.
+4750: End tag br.
+4752: End tag br.
+5484: End tag br.
+5486: End tag br.
+5498: End tag br.
+5500: End tag br.
+5502: End tag br.
+5504: End tag br.
+5668: End tag br.
+5670: End tag br.
+5672: End tag br.
+5674: End tag br.
+5676: End tag br.
+5756: End tag br.
+5760: End tag br.
+6805: End tag br.
+6809: End tag br.
+7383: End tag br.
+7389: End tag br.
+7398: End tag br.
+7400: End tag br.
+7402: End tag br.
+7404: End tag br.
+9139: End tag br.
+9143: End tag br.
+9219: End tag br.
+9221: End tag br.
+9223: End tag br.
+9225: End tag br.
+9227: End tag br.
+9229: End tag br.
+9231: End tag br.
+9233: End tag br.
+9969: End tag br.
+9971: End tag br.
+10376: End tag br.
+10380: End tag br.
+11656: End tag br.
+11658: End tag br.
+11660: End tag br.
+11683: End tag br.
+11688: End tag br.
+11690: End tag br.
+13297: End tag br.
+13303: End tag br.
+14266: End tag br.
+14268: End tag br.
+14559: End tag br.
+14564: End tag br.
+14797: End tag br.
+14799: End tag br.
+14801: End tag br.
+14932: End tag br.
+14934: End tag br.
+14936: End tag br.
+15077: End tag br.
+15079: End tag br.
+15288: End tag br.
+15290: End tag br.
+15418: End tag br.
+15422: End tag br.
+16515: End tag br.
+16524: End tag br.
+16833: End tag br.
+16835: End tag br.
+17360: End tag br.
+17362: End tag br.
+17364: End tag br.
+17730: End tag br.
+17734: End tag br.
+17743: End tag br.
+17745: End tag br.
+19319: End tag br.
+19321: End tag br.
+19353: End tag br.
+19355: End tag br.
+19367: End tag br.
+19371: End tag br.
+19856: End tag br.
+19858: End tag br.
+20122: End tag br.
+20124: End tag br.
+20416: End tag br.
+20418: End tag br.
+20429: End tag br.
+20431: End tag br.
+20576: End tag br.
+20580: End tag br.
+20602: End tag br.
+20604: End tag br.
+21612: End tag br.
+21617: End tag br.
+23129: End tag br.
+23134: End tag br.
+25783: End tag br.
+25790: End tag br.
+27609: End tag br.
+27614: End tag br.
+28074: End tag br.
+28076: End tag br.
+28383: End tag br.
+28386: End tag br.
+28404: End tag br.
+28406: End tag br.
+28479: End tag br.
+28485: End tag br.
+28494: End tag br.
+28496: End tag br.
+28498: End tag br.
+28500: End tag br.
+29292: End tag br.
+29297: End tag br.
+29485: End tag br.
+29487: End tag br.
+30031: End tag br.
+30033: End tag br.
+30035: End tag br.
+30037: End tag br.
+30118: End tag br.
+30386: End tag br.
+30392: End tag br.
+31265: End tag br.
+31273: End tag br.
+32097: End tag br.
+32099: End tag br.
+32101: End tag br.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/PoemsGrphAnlys.xhtml
+HTML VALIDATION: 
+Errors
+----------------------
+98: XHTML element div not allowed as child of XHTML element p in this context. (Suppressing further errors from this subtree.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/cookSecVoyageAll.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/InjuredIsland.html
+HTML VALIDATION: 
+Errors
+----------------------
+6: Attribute xml:space not allowed on element script at this point.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/ForsterGeorgCompleteNoSB.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+4: Stray end tag link.
+454: End tag br.
+458: End tag br.
+1405: End tag br.
+1411: End tag br.
+2302: End tag br.
+2305: End tag br.
+2354: End tag br.
+2356: End tag br.
+2358: End tag br.
+3123: End tag br.
+3127: End tag br.
+3258: End tag br.
+3260: End tag br.
+3262: End tag br.
+4107: End tag br.
+4110: End tag br.
+4641: End tag br.
+4643: End tag br.
+5375: End tag br.
+5377: End tag br.
+5389: End tag br.
+5391: End tag br.
+5393: End tag br.
+5395: End tag br.
+5559: End tag br.
+5561: End tag br.
+5563: End tag br.
+5565: End tag br.
+5567: End tag br.
+5647: End tag br.
+5651: End tag br.
+6696: End tag br.
+6700: End tag br.
+7274: End tag br.
+7280: End tag br.
+7289: End tag br.
+7291: End tag br.
+7293: End tag br.
+7295: End tag br.
+9030: End tag br.
+9034: End tag br.
+9110: End tag br.
+9112: End tag br.
+9114: End tag br.
+9116: End tag br.
+9118: End tag br.
+9120: End tag br.
+9122: End tag br.
+9124: End tag br.
+9860: End tag br.
+9862: End tag br.
+10267: End tag br.
+10271: End tag br.
+11547: End tag br.
+11549: End tag br.
+11551: End tag br.
+11574: End tag br.
+11579: End tag br.
+11581: End tag br.
+13188: End tag br.
+13194: End tag br.
+14157: End tag br.
+14159: End tag br.
+14450: End tag br.
+14455: End tag br.
+14688: End tag br.
+14690: End tag br.
+14692: End tag br.
+14823: End tag br.
+14825: End tag br.
+14827: End tag br.
+14968: End tag br.
+14970: End tag br.
+15179: End tag br.
+15181: End tag br.
+15309: End tag br.
+15313: End tag br.
+16406: End tag br.
+16415: End tag br.
+16724: End tag br.
+16726: End tag br.
+17251: End tag br.
+17253: End tag br.
+17255: End tag br.
+17621: End tag br.
+17625: End tag br.
+17634: End tag br.
+17636: End tag br.
+19210: End tag br.
+19212: End tag br.
+19244: End tag br.
+19246: End tag br.
+19258: End tag br.
+19262: End tag br.
+19747: End tag br.
+19749: End tag br.
+20013: End tag br.
+20015: End tag br.
+20307: End tag br.
+20309: End tag br.
+20320: End tag br.
+20322: End tag br.
+20467: End tag br.
+20471: End tag br.
+20493: End tag br.
+20495: End tag br.
+21503: End tag br.
+21508: End tag br.
+23020: End tag br.
+23025: End tag br.
+25674: End tag br.
+25681: End tag br.
+27500: End tag br.
+27505: End tag br.
+27965: End tag br.
+27967: End tag br.
+28274: End tag br.
+28277: End tag br.
+28295: End tag br.
+28297: End tag br.
+28370: End tag br.
+28376: End tag br.
+28385: End tag br.
+28387: End tag br.
+28389: End tag br.
+28391: End tag br.
+29183: End tag br.
+29188: End tag br.
+29376: End tag br.
+29378: End tag br.
+29922: End tag br.
+29924: End tag br.
+29926: End tag br.
+29928: End tag br.
+30009: End tag br.
+30277: End tag br.
+30283: End tag br.
+31156: End tag br.
+31164: End tag br.
+31988: End tag br.
+31990: End tag br.
+31992: End tag br.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/cookSecVoyageVol2.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/HistOverlay.html
+HTML VALIDATION: 
+Errors
+----------------------
+9: Element title not allowed as child of element head in this context. (Suppressing further errors from this subtree.)
+17: & did not start a character reference. (& probably should have been escaped as &amp;.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/CookVoy1graph.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/voyages.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: 
+List of broken links:
+----------------------
+http://www.gutenberg.org/wiki/Gutenberg:About	
+  Line: 107
+ To do: Must check manually. Site forbids validator.
+
+FILE: /var/www/html/pacific/index.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: 
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 93
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/maps.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/HawkesworthWallis.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/HwksWallisMap.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+97: & did not start a character reference. (& probably should have been escaped as &amp;.)
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/ForsterGeorgComplete.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+4: Stray end tag link.
+538: End tag br.
+542: End tag br.
+1489: End tag br.
+1495: End tag br.
+2386: End tag br.
+2389: End tag br.
+2438: End tag br.
+2440: End tag br.
+2442: End tag br.
+3207: End tag br.
+3211: End tag br.
+3342: End tag br.
+3344: End tag br.
+3346: End tag br.
+4191: End tag br.
+4194: End tag br.
+4725: End tag br.
+4727: End tag br.
+5459: End tag br.
+5461: End tag br.
+5473: End tag br.
+5475: End tag br.
+5477: End tag br.
+5479: End tag br.
+5643: End tag br.
+5645: End tag br.
+5647: End tag br.
+5649: End tag br.
+5651: End tag br.
+5731: End tag br.
+5735: End tag br.
+6780: End tag br.
+6784: End tag br.
+7358: End tag br.
+7364: End tag br.
+7373: End tag br.
+7375: End tag br.
+7377: End tag br.
+7379: End tag br.
+9114: End tag br.
+9118: End tag br.
+9194: End tag br.
+9196: End tag br.
+9198: End tag br.
+9200: End tag br.
+9202: End tag br.
+9204: End tag br.
+9206: End tag br.
+9208: End tag br.
+9944: End tag br.
+9946: End tag br.
+10351: End tag br.
+10355: End tag br.
+11631: End tag br.
+11633: End tag br.
+11635: End tag br.
+11658: End tag br.
+11663: End tag br.
+11665: End tag br.
+13272: End tag br.
+13278: End tag br.
+14241: End tag br.
+14243: End tag br.
+14534: End tag br.
+14539: End tag br.
+14772: End tag br.
+14774: End tag br.
+14776: End tag br.
+14907: End tag br.
+14909: End tag br.
+14911: End tag br.
+15052: End tag br.
+15054: End tag br.
+15263: End tag br.
+15265: End tag br.
+15393: End tag br.
+15397: End tag br.
+16490: End tag br.
+16499: End tag br.
+16808: End tag br.
+16810: End tag br.
+17335: End tag br.
+17337: End tag br.
+17339: End tag br.
+17705: End tag br.
+17709: End tag br.
+17718: End tag br.
+17720: End tag br.
+19294: End tag br.
+19296: End tag br.
+19328: End tag br.
+19330: End tag br.
+19342: End tag br.
+19346: End tag br.
+19831: End tag br.
+19833: End tag br.
+20097: End tag br.
+20099: End tag br.
+20391: End tag br.
+20393: End tag br.
+20404: End tag br.
+20406: End tag br.
+20551: End tag br.
+20555: End tag br.
+20577: End tag br.
+20579: End tag br.
+21587: End tag br.
+21592: End tag br.
+23104: End tag br.
+23109: End tag br.
+25757: End tag br.
+25764: End tag br.
+27583: End tag br.
+27588: End tag br.
+28047: End tag br.
+28049: End tag br.
+28356: End tag br.
+28359: End tag br.
+28377: End tag br.
+28379: End tag br.
+28452: End tag br.
+28458: End tag br.
+28467: End tag br.
+28469: End tag br.
+28471: End tag br.
+28473: End tag br.
+29265: End tag br.
+29270: End tag br.
+29461: End tag br.
+29463: End tag br.
+30007: End tag br.
+30009: End tag br.
+30011: End tag br.
+30013: End tag br.
+30094: End tag br.
+30362: End tag br.
+30368: End tag br.
+31241: End tag br.
+31249: End tag br.
+32073: End tag br.
+32075: End tag br.
+32077: End tag br.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+29435, 49: Text run is not in Unicode Normalization Form C.
+29445, 12: Text run is not in Unicode Normalization Form C.
+29452, 58: Text run is not in Unicode Normalization Form C.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/siteIndex.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/ECCOGroup/EccoLocSortType.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+6: Attribute xml:space not allowed on element script at this point.
+173: No p element in scope but a p end tag seen.
+564: End tag p implied, but there were open elements.
+563: Unclosed element span.
+604: Stray end tag span.
+605: No p element in scope but a p end tag seen.
+744: End tag p implied, but there were open elements.
+743: Unclosed element span.
+762: Stray end tag span.
+763: No p element in scope but a p end tag seen.
+776: End tag p implied, but there were open elements.
+775: Unclosed element span.
+807: Stray end tag span.
+808: No p element in scope but a p end tag seen.
+820: End tag p implied, but there were open elements.
+819: Unclosed element span.
+845: Stray end tag span.
+845: No p element in scope but a p end tag seen.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/ECCOGroup/InjuredIsland.xml	
+  Line: 132
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/InjuredIsland.xml' does not exist
+/var/www/html/pacific/ECCOGroup/poems.html	
+  Line: 129
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/poems.html' does not exist
+/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.xml	
+  Line: 117
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.xml' does not exist
+/var/www/html/pacific/ECCOGroup/about.html	
+  Line: 105
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/about.html' does not exist
+/var/www/html/pacific/ECCOGroup/HwksV2Ch4-8PNum.xml	
+  Line: 112
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HwksV2Ch4-8PNum.xml' does not exist
+/var/www/html/pacific/ECCOGroup/HwksWallisMap.html	
+  Line: 149
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HwksWallisMap.html' does not exist
+/var/www/html/pacific/ECCOGroup/index.html	
+  Line: 101
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/index.html' does not exist
+/var/www/html/pacific/ECCOGroup/cookSecVoyageAll.html	
+  Line: 121
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/cookSecVoyageAll.html' does not exist
+/var/www/html/pacific/ECCOGroup/CookElegy1780.html	
+  Line: 134
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/CookElegy1780.html' does not exist
+/var/www/html/pacific/ECCOGroup/HawkesworthWallis.html	
+  Line: 112
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HawkesworthWallis.html' does not exist
+/var/www/html/pacific/ECCOGroup/siteIndex.html	
+  Line: 158
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/siteIndex.html' does not exist
+/var/www/html/pacific/ECCOGroup/cookVoy2Pnum.xml	
+  Line: 122
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/cookVoy2Pnum.xml' does not exist
+/var/www/html/pacific/ECCOGroup/banner7.jpg	
+  Line: 95
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/banner7.jpg' does not exist
+/var/www/html/pacific/ECCOGroup/InjuredIsland.html	
+  Line: 132
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/InjuredIsland.html' does not exist
+/var/www/html/pacific/ECCOGroup/ElegyCook.xml	
+  Line: 134
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ElegyCook.xml' does not exist
+/var/www/html/pacific/ECCOGroup/voyages.html	
+  Line: 109
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/voyages.html' does not exist
+/var/www/html/pacific/ECCOGroup/PoemsGrphAnlys.xhtml	
+  Line: 136
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/PoemsGrphAnlys.xhtml' does not exist
+/var/www/html/pacific/ECCOGroup/CookVoy2Map.html	
+  Line: 152
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/CookVoy2Map.html' does not exist
+/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.html	
+  Line: 116
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.html' does not exist
+/var/www/html/pacific/ECCOGroup/maps.html	
+  Line: 146
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/maps.html' does not exist
+
+FILE: /var/www/html/pacific/ECCOGroup/EccoLocSortDate.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+6: Attribute xml:space not allowed on element script at this point.
+606: End tag p implied, but there were open elements.
+605: Unclosed element span.
+657: Stray end tag span.
+658: No p element in scope but a p end tag seen.
+775: End tag p implied, but there were open elements.
+774: Unclosed element span.
+793: Stray end tag span.
+794: No p element in scope but a p end tag seen.
+925: End tag p implied, but there were open elements.
+924: Unclosed element span.
+959: Stray end tag span.
+960: No p element in scope but a p end tag seen.
+972: End tag p implied, but there were open elements.
+971: Unclosed element span.
+1002: Stray end tag span.
+1003: No p element in scope but a p end tag seen.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+6, 87: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/ECCOGroup/InjuredIsland.xml	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/InjuredIsland.xml' does not exist
+/var/www/html/pacific/ECCOGroup/poems.html	
+  Line: 130
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/poems.html' does not exist
+/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.xml	
+  Line: 118
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.xml' does not exist
+/var/www/html/pacific/ECCOGroup/about.html	
+  Line: 105
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/about.html' does not exist
+/var/www/html/pacific/ECCOGroup/HwksV2Ch4-8PNum.xml	
+  Line: 112
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HwksV2Ch4-8PNum.xml' does not exist
+/var/www/html/pacific/ECCOGroup/HwksWallisMap.html	
+  Line: 153
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HwksWallisMap.html' does not exist
+/var/www/html/pacific/ECCOGroup/index.html	
+  Line: 101
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/index.html' does not exist
+/var/www/html/pacific/ECCOGroup/cookSecVoyageAll.html	
+  Line: 122
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/cookSecVoyageAll.html' does not exist
+/var/www/html/pacific/ECCOGroup/CookElegy1780.html	
+  Line: 136
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/CookElegy1780.html' does not exist
+/var/www/html/pacific/ECCOGroup/HawkesworthWallis.html	
+  Line: 112
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/HawkesworthWallis.html' does not exist
+/var/www/html/pacific/ECCOGroup/siteIndex.html	
+  Line: 162
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/siteIndex.html' does not exist
+/var/www/html/pacific/ECCOGroup/cookVoy2Pnum.xml	
+  Line: 123
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/cookVoy2Pnum.xml' does not exist
+/var/www/html/pacific/ECCOGroup/banner7.jpg	
+  Line: 95
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/banner7.jpg' does not exist
+/var/www/html/pacific/ECCOGroup/InjuredIsland.html	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/InjuredIsland.html' does not exist
+/var/www/html/pacific/ECCOGroup/ElegyCook.xml	
+  Line: 136
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ElegyCook.xml' does not exist
+/var/www/html/pacific/ECCOGroup/voyages.html	
+  Line: 109
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/voyages.html' does not exist
+/var/www/html/pacific/ECCOGroup/PoemsGrphAnlys.xhtml	
+  Line: 139
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/PoemsGrphAnlys.xhtml' does not exist
+/var/www/html/pacific/ECCOGroup/CookVoy2Map.html	
+  Line: 156
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/CookVoy2Map.html' does not exist
+/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.html	
+  Line: 117
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/ForsterGeorgComplete.html' does not exist
+/var/www/html/pacific/ECCOGroup/maps.html	
+  Line: 150
+  Code: 404 File `/var/www/html/pacific/ECCOGroup/maps.html' does not exist
+
+FILE: /var/www/html/pacific/ECCOGroup/bibliopiegraph.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/OmaiGroup/Omai.html
+HTML VALIDATION: 
+Errors
+----------------------
+10: The element button must not appear as a descendant of the a element.
+11: The element button must not appear as a descendant of the a element.
+12: The element button must not appear as a descendant of the a element.
+13: The element button must not appear as a descendant of the a element.
+14: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/OmaiGroup/OmaiOrATripRoundTheWorld.html
+HTML VALIDATION: 
+Errors
+----------------------
+5: Stray end tag link.
+6: Attribute xml:space not allowed on element script at this point.
+11: The element button must not appear as a descendant of the a element.
+12: The element button must not appear as a descendant of the a element.
+13: The element button must not appear as a descendant of the a element.
+14: The element button must not appear as a descendant of the a element.
+15: The element button must not appear as a descendant of the a element.
+372: End tag br.
+377: End tag br.
+387: End tag br.
+389: End tag br.
+392: End tag br.
+394: End tag br.
+396: End tag br.
+399: End tag br.
+429: End tag br.
+438: End tag br.
+440: End tag br.
+446: End tag br.
+448: End tag br.
+450: End tag br.
+453: End tag br.
+455: End tag br.
+457: End tag br.
+459: End tag br.
+461: End tag br.
+463: End tag br.
+465: End tag br.
+474: End tag br.
+477: End tag br.
+504: End tag br.
+506: End tag br.
+525: End tag br.
+534: End tag br.
+536: End tag br.
+538: End tag br.
+545: End tag br.
+555: End tag br.
+565: End tag br.
+575: End tag br.
+585: End tag br.
+595: End tag br.
+605: End tag br.
+615: End tag br.
+625: End tag br.
+635: End tag br.
+645: End tag br.
+655: End tag br.
+680: End tag br.
+690: End tag br.
+726: End tag br.
+743: End tag br.
+755: End tag br.
+770: End tag br.
+772: End tag br.
+800: End tag br.
+804: End tag br.
+807: End tag br.
+816: End tag br.
+819: End tag br.
+821: End tag br.
+824: End tag br.
+826: End tag br.
+828: End tag br.
+843: End tag br.
+849: End tag br.
+851: End tag br.
+854: End tag br.
+857: End tag br.
+860: End tag br.
+916: End tag br.
+919: End tag br.
+941: End tag br.
+943: End tag br.
+952: End tag br.
+954: End tag br.
+956: End tag br.
+958: End tag br.
+973: End tag br.
+980: End tag br.
+982: End tag br.
+989: End tag br.
+991: End tag br.
+993: End tag br.
+996: End tag br.
+998: End tag br.
+1000: End tag br.
+1007: End tag br.
+1009: End tag br.
+1016: End tag br.
+1031: End tag br.
+1041: End tag br.
+1051: End tag br.
+1053: End tag br.
+1055: End tag br.
+1064: End tag br.
+1070: End tag br.
+1075: End tag br.
+1080: End tag br.
+1083: End tag br.
+1099: End tag br.
+1103: End tag br.
+1118: End tag br.
+1122: End tag br.
+1167: End tag br.
+1169: End tag br.
+1171: End tag br.
+1173: End tag br.
+1175: End tag br.
+1190: End tag br.
+1192: End tag br.
+1196: End tag br.
+1200: End tag br.
+1203: End tag br.
+1205: End tag br.
+1207: End tag br.
+1209: End tag br.
+1211: End tag br.
+1213: End tag br.
+1264: End tag br.
+1266: End tag br.
+1268: End tag br.
+1270: End tag br.
+1282: End tag br.
+1284: End tag br.
+1286: End tag br.
+1298: End tag br.
+1300: End tag br.
+1302: End tag br.
+1304: End tag br.
+1306: End tag br.
+1308: End tag br.
+1310: End tag br.
+1312: End tag br.
+1314: End tag br.
+1316: End tag br.
+1328: End tag br.
+1339: End tag br.
+1351: End tag br.
+1364: End tag br.
+1378: End tag br.
+1382: End tag br.
+1394: End tag br.
+1396: End tag br.
+1408: End tag br.
+1427: End tag br.
+1439: End tag br.
+1451: End tag br.
+1463: End tag br.
+1476: End tag br.
+1479: End tag br.
+1569: End tag br.
+1571: End tag br.
+1573: End tag br.
+1575: End tag br.
+1577: End tag br.
+1579: End tag br.
+1581: End tag br.
+1583: End tag br.
+1585: End tag br.
+1587: End tag br.
+1589: End tag br.
+1591: End tag br.
+1593: End tag br.
+1595: End tag br.
+1597: End tag br.
+1599: End tag br.
+1601: End tag br.
+1603: End tag br.
+1611: End tag br.
+1613: End tag br.
+1615: End tag br.
+1617: End tag br.
+1621: End tag br.
+1623: End tag br.
+1625: End tag br.
+1627: End tag br.
+1629: End tag br.
+1631: End tag br.
+1633: End tag br.
+1640: End tag br.
+1642: End tag br.
+1645: End tag br.
+1647: End tag br.
+1660: End tag br.
+1662: End tag br.
+1665: End tag br.
+1667: End tag br.
+1671: End tag br.
+1673: End tag br.
+1676: End tag br.
+1679: End tag br.
+1683: End tag br.
+1688: End tag br.
+1690: End tag br.
+1752: End tag br.
+1754: End tag br.
+1756: End tag br.
+1758: End tag br.
+1760: End tag br.
+1762: End tag br.
+1779: End tag br.
+1781: End tag br.
+1783: End tag br.
+1785: End tag br.
+1787: End tag br.
+1789: End tag br.
+1791: End tag br.
+1825: End tag br.
+1827: End tag br.
+1829: End tag br.
+1831: End tag br.
+1833: End tag br.
+1835: End tag br.
+1837: End tag br.
+1839: End tag br.
+1841: End tag br.
+1843: End tag br.
+1845: End tag br.
+1847: End tag br.
+1849: End tag br.
+1851: End tag br.
+1853: End tag br.
+1856: End tag br.
+1862: End tag br.
+1864: End tag br.
+1867: End tag br.
+1918: End tag br.
+1922: End tag br.
+1924: End tag br.
+1928: End tag br.
+1931: End tag br.
+1933: End tag br.
+1935: End tag br.
+1948: End tag br.
+1950: End tag br.
+1957: End tag br.
+1959: End tag br.
+1971: End tag br.
+1979: End tag br.
+1981: End tag br.
+2030: End tag br.
+2032: End tag br.
+2034: End tag br.
+2036: End tag br.
+2039: End tag br.
+2042: End tag br.
+2058: End tag br.
+2061: End tag br.
+2063: End tag br.
+2065: End tag br.
+2068: End tag br.
+2071: End tag br.
+2074: End tag br.
+2110: End tag br.
+2112: End tag br.
+2114: End tag br.
+2116: End tag br.
+2118: End tag br.
+2120: End tag br.
+2122: End tag br.
+2124: End tag br.
+2126: End tag br.
+2128: End tag br.
+2130: End tag br.
+2133: End tag br.
+2135: End tag br.
+2137: End tag br.
+2139: End tag br.
+2141: End tag br.
+2143: End tag br.
+2145: End tag br.
+2147: End tag br.
+2149: End tag br.
+2151: End tag br.
+2153: End tag br.
+2155: End tag br.
+2157: End tag br.
+2159: End tag br.
+2161: End tag br.
+2163: End tag br.
+2165: End tag br.
+2167: End tag br.
+2169: End tag br.
+2228: End tag br.
+2235: End tag br.
+2237: End tag br.
+2244: End tag br.
+2246: End tag br.
+2254: End tag br.
+2256: End tag br.
+2258: End tag br.
+2261: End tag br.
+2263: End tag br.
+2265: End tag br.
+2267: End tag br.
+2269: End tag br.
+2285: End tag br.
+2287: End tag br.
+2293: End tag br.
+2295: End tag br.
+2297: End tag br.
+2312: End tag br.
+2316: End tag br.
+2355: End tag br.
+2365: End tag br.
+2367: End tag br.
+2369: End tag br.
+2371: End tag br.
+2373: End tag br.
+2375: End tag br.
+2377: End tag br.
+2394: End tag br.
+2396: End tag br.
+2410: End tag br.
+2412: End tag br.
+2424: End tag br.
+2441: End tag br.
+2453: End tag br.
+2465: End tag br.
+2497: End tag br.
+2502: End tag br.
+2518: End tag br.
+2527: End tag br.
+2529: End tag br.
+2533: End tag br.
+2548: End tag br.
+2550: End tag br.
+2552: End tag br.
+2559: End tag br.
+2588: End tag br.
+2639: End tag br.
+2648: End tag br.
+2651: End tag br.
+2653: End tag br.
+2662: End tag br.
+2664: End tag br.
+2666: End tag br.
+2668: End tag br.
+2677: End tag br.
+2679: End tag br.
+2681: End tag br.
+2690: End tag br.
+2692: End tag br.
+2701: End tag br.
+2703: End tag br.
+2712: End tag br.
+2714: End tag br.
+2716: End tag br.
+2718: End tag br.
+2727: End tag br.
+2729: End tag br.
+2738: End tag br.
+2740: End tag br.
+2742: End tag br.
+2750: End tag br.
+2752: End tag br.
+2761: End tag br.
+2763: End tag br.
+2765: End tag br.
+2774: End tag br.
+2776: End tag br.
+2785: End tag br.
+2787: End tag br.
+2795: End tag br.
+2797: End tag br.
+2805: End tag br.
+2807: End tag br.
+2809: End tag br.
+2845: End tag br.
+2847: End tag br.
+2859: End tag br.
+2861: End tag br.
+2863: End tag br.
+2865: End tag br.
+2883: End tag br.
+2898: End tag br.
+2901: End tag br.
+2913: End tag br.
+2918: End tag br.
+2942: End tag br.
+2944: End tag br.
+2946: End tag br.
+2948: End tag br.
+2955: End tag br.
+2958: End tag br.
+2961: End tag br.
+2965: End tag br.
+2967: End tag br.
+2970: End tag br.
+2972: End tag br.
+2975: End tag br.
+2978: End tag br.
+2981: End tag br.
+2988: End tag br.
+2990: End tag br.
+2993: End tag br.
+3000: End tag br.
+3003: End tag br.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+6, 85: Attribute xml:space is not serializable as XML 1.0.
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/OmaiGroup/CookSecondVoyageBookOneChapterEight.html
+HTML VALIDATION: 
+Errors
+----------------------
+10: The element button must not appear as a descendant of the a element.
+11: The element button must not appear as a descendant of the a element.
+12: The element button must not appear as a descendant of the a element.
+13: The element button must not appear as a descendant of the a element.
+14: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/OmaiGroup/index.html
+HTML VALIDATION: 
+Errors
+----------------------
+10: The element button must not appear as a descendant of the a element.
+11: The element button must not appear as a descendant of the a element.
+12: The element button must not appear as a descendant of the a element.
+13: The element button must not appear as a descendant of the a element.
+14: The element button must not appear as a descendant of the a element.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/CookVoy1Group/TableHTML.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/CookVoy1Group/CookVoy1HTML.html
+HTML VALIDATION: 
+Errors
+----------------------
+276: Self-closing syntax (/>) used on a non-void HTML element. Ignoring the slash and treating as a start tag.
+279: End tag h2 seen, but there were open elements.
+276: Unclosed element a.
+397: Start tag a seen but an element of the same type was already open.
+397: End tag a violates nesting rules.
+397: Cannot recover after last error. Any further errors will be ignored.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1601.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+154: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+155: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+158: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+168: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+169: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+170: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+177: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+178: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+179: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+184: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+185: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+186: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+191: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+192: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+193: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+198: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+199: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+200: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+201: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+206: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+207: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+208: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+211: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+212: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+213: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160129a.jpg	
+  Line: 192
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160129a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160130b.jpg	
+ Lines: 200, 201
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160130b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160196b.jpg	
+  Line: 186
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160196b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160129b.jpg	
+  Line: 193
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160129b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160191a.jpg	
+  Line: 178
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160191a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1601harva.jpg	
+  Line: 212
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1601harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160191b.jpg	
+  Line: 179
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160191b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160196a.jpg	
+  Line: 185
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160196a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160190.jpg	
+  Line: 168
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160190.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1601.jpg	
+  Line: 154
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1601.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160130a.jpg	
+  Line: 199
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160130a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160196.jpg	
+  Line: 184
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160196.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160145.jpg	
+  Line: 206
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160145.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160145b.jpg	
+  Line: 208
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160145b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160190b.jpg	
+  Line: 170
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160190b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1601harvb.jpg	
+  Line: 213
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1601harvb.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160129.jpg	
+  Line: 191
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160129.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160145a.jpg	
+  Line: 207
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160145a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160190a.jpg	
+  Line: 169
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160190a.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1607.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+110: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+111: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+114: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+124: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+125: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+126: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+133: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+134: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+135: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+140: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+141: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+142: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+147: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+148: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+149: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+154: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+155: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+156: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+157: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+162: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+163: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+164: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+167: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+168: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+169: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/fs1607b.jpg	
+  Line: 114
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1607b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160790b.jpg	
+  Line: 126
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160790b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160745b.jpg	
+  Line: 164
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160745b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1607a.jpg	
+  Line: 111
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1607a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160796a.jpg	
+  Line: 141
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160796a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160791.jpg	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160791.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160791b.jpg	
+  Line: 135
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160791b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160796b.jpg	
+  Line: 142
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160796b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160730a.jpg	
+  Line: 155
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160730a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160791a.jpg	
+  Line: 134
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160791a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160730b.jpg	
+ Lines: 156, 157
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160730b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160730.jpg	
+  Line: 154
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160730.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1607harv.jpg	
+  Line: 167
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1607harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160796.jpg	
+  Line: 140
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160796.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160745a.jpg	
+  Line: 163
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160745a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160745.jpg	
+  Line: 162
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160745.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160790a.jpg	
+  Line: 125
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160790a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160729a.jpg	
+  Line: 148
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160729a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160729b.jpg	
+  Line: 149
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160729b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160790.jpg	
+  Line: 124
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160790.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1605.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+152: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+153: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+156: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+166: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+167: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+168: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+175: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+176: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+177: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+182: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+183: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+184: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+189: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+190: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+191: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+196: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+197: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+198: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+199: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+204: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+205: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+206: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+209: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+210: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+211: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160591.jpg	
+  Line: 175
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160591.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160545b.jpg	
+  Line: 206
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160545b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160596b.jpg	
+  Line: 184
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160596b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160591b.jpg	
+  Line: 177
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160591b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160529b.jpg	
+  Line: 191
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160529b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160596a.jpg	
+  Line: 183
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160596a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160529.jpg	
+  Line: 189
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160529.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1605harva.jpg	
+  Line: 210
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1605harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160545.jpg	
+  Line: 204
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160545.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160545a.jpg	
+  Line: 205
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160545a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160530.jpg	
+  Line: 196
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160530.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1605.jpg	
+  Line: 152
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1605.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160529a.jpg	
+  Line: 190
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160529a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160591a.jpg	
+  Line: 176
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160591a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160590b.jpg	
+  Line: 168
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160590b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160590.jpg	
+  Line: 166
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160590.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1605harvb.jpg	
+  Line: 211
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1605harvb.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160590a.jpg	
+  Line: 167
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160590a.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1611.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+103: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+104: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+107: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+117: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+118: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+119: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+126: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+127: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+128: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+133: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+134: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+135: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+140: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+141: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+142: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+147: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+148: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+149: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+150: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+155: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+156: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+157: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+160: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+161: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+162: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/1611harv.jpg	
+  Line: 160
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1611harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161196.jpg	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161196.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161145a.jpg	
+  Line: 156
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161145a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161190a.jpg	
+  Line: 118
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161190a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161130b.jpg	
+ Lines: 149, 150
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161130b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161145b.jpg	
+  Line: 157
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161145b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161130a.jpg	
+  Line: 148
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161130a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161145.jpg	
+  Line: 155
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161145.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161129.jpg	
+  Line: 140
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161129.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161191a.jpg	
+  Line: 127
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161191a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/161129a.jpg	
+  Line: 141
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161129a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161130.jpg	
+  Line: 147
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161130.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161191.jpg	
+  Line: 126
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161191.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161129b.jpg	
+  Line: 142
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161129b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161191b.jpg	
+  Line: 128
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161191b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161196b.jpg	
+  Line: 135
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161196b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1611harva.jpg	
+  Line: 161
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1611harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161190b.jpg	
+  Line: 119
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161190b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1611.jpg	
+  Line: 103
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1611.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161190.jpg	
+  Line: 117
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161190.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161196a.jpg	
+  Line: 134
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161196a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1611harvb.jpg	
+  Line: 162
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1611harvb.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1606.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+174: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+175: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+178: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+188: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+189: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+190: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+197: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+198: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+199: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+204: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+205: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+206: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+211: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+212: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+213: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+218: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+219: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+220: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+221: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+226: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+227: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+228: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+231: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+232: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+233: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160690a.jpg	
+  Line: 189
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160690a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160696a.jpg	
+  Line: 205
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160696a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160629a.jpg	
+  Line: 212
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160629a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160645.jpg	
+  Line: 226
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160645.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1606.jpg	
+  Line: 174
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1606.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160645b.jpg	
+  Line: 228
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160645b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160629b.jpg	
+  Line: 213
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160629b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160691b.jpg	
+  Line: 199
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160691b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160645a.jpg	
+  Line: 227
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160645a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160696.jpg	
+  Line: 204
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160696.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1606harv.jpg	
+  Line: 231
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1606harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160630b.jpg	
+ Lines: 220, 221
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160630b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160690.jpg	
+  Line: 188
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160690.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160691.jpg	
+  Line: 197
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160691.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160696b.jpg	
+  Line: 206
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160696b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160629.jpg	
+  Line: 211
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160629.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160630a.jpg	
+  Line: 219
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160630a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160691a.jpg	
+  Line: 198
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160691a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160690b.jpg	
+  Line: 190
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160690b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160630.jpg	
+  Line: 218
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160630.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1609.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+167: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+168: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+171: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+181: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+182: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+183: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+190: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+191: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+192: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+197: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+198: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+199: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+204: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+205: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+206: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+211: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+212: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+213: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+214: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+219: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+220: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+221: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+224: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+225: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+226: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160945b.jpg	
+  Line: 221
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160945b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160929.jpg	
+  Line: 204
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160929.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160990a.jpg	
+  Line: 182
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160990a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160945a.jpg	
+  Line: 220
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160945a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1609harv.jpg	
+  Line: 224
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1609harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160991.jpg	
+  Line: 190
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160991.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160930a.jpg	
+  Line: 212
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160930a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160930b.jpg	
+ Lines: 213, 214
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160930b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160990.jpg	
+  Line: 181
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160990.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160991a.jpg	
+  Line: 191
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160991a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160929a.jpg	
+  Line: 205
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160929a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160945.jpg	
+  Line: 219
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160945.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160991b.jpg	
+  Line: 192
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160991b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160996b.jpg	
+  Line: 199
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160996b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160996a.jpg	
+  Line: 198
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160996a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160929b.jpg	
+  Line: 206
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160929b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160990b.jpg	
+  Line: 183
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160990b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1609.jpg	
+  Line: 167
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1609.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1604.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+89: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+90: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+93: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+103: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+104: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+105: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+112: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+113: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+114: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+119: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+120: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+121: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+126: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+127: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+128: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+133: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+134: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+135: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+136: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+141: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+142: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+143: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+146: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+147: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+148: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160491.jpg	
+  Line: 112
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160491.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160445b.jpg	
+  Line: 143
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160445b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160490b.jpg	
+  Line: 105
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160490b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160490a.jpg	
+  Line: 104
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160490a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160429a.jpg	
+  Line: 127
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160429a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160491a.jpg	
+  Line: 113
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160491a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160430.jpg	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160430.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160429b.jpg	
+  Line: 128
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160429b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160445.jpg	
+  Line: 141
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160445.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1604harv.jpg	
+  Line: 146
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1604harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160491b.jpg	
+  Line: 114
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160491b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160496b.jpg	
+  Line: 121
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160496b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160445a.jpg	
+  Line: 142
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160445a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160429.jpg	
+  Line: 126
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160429.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1604a.jpg	
+  Line: 90
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1604a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160496.jpg	
+  Line: 119
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160496.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1604b.jpg	
+  Line: 93
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1604b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160496a.jpg	
+  Line: 120
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160496a.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1603.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+140: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+141: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+144: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+154: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+155: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+156: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+163: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+164: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+165: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+170: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+171: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+172: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+177: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+178: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+179: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+184: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+185: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+186: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+187: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+192: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+193: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+194: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+197: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+198: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+199: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160329.jpg	
+  Line: 177
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160329.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160330b.jpg	
+ Lines: 186, 187
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160330b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160390b.jpg	
+  Line: 156
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160390b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160390.jpg	
+  Line: 154
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160390.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160345.jpg	
+  Line: 192
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160345.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160330a.jpg	
+  Line: 185
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160330a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160391b.jpg	
+  Line: 165
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160391b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160329b.jpg	
+  Line: 179
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160329b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160396b.jpg	
+  Line: 172
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160396b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160396a.jpg	
+  Line: 171
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160396a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1603.jpg	
+  Line: 140
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1603.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160390a.jpg	
+  Line: 155
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160390a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160329a.jpg	
+  Line: 178
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160329a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1603harva.jpg	
+  Line: 198
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1603harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160345a.jpg	
+  Line: 193
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160345a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1603harvb.jpg	
+  Line: 199
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1603harvb.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160391a.jpg	
+  Line: 164
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160391a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160391.jpg	
+  Line: 163
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160391.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160345b.jpg	
+  Line: 194
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160345b.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1608.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+150: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+151: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+154: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+164: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+165: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+166: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+173: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+174: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+175: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+180: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+181: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+182: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+187: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+188: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+189: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+194: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+195: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+196: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+197: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+202: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+203: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+204: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+207: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+208: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+209: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160830a.jpg	
+  Line: 195
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160830a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160829a.jpg	
+  Line: 188
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160829a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160845b.jpg	
+  Line: 204
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160845b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160829b.jpg	
+  Line: 189
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160829b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1608b.jpg	
+  Line: 154
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1608b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1608harva.jpg	
+  Line: 208
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1608harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1608harv.jpg	
+  Line: 207
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1608harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160896b.jpg	
+  Line: 182
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160896b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160896a.jpg	
+  Line: 181
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160896a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160845a.jpg	
+  Line: 203
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160845a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1608harvb.jpg	
+  Line: 209
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1608harvb.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160830.jpg	
+  Line: 194
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160830.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160891a.jpg	
+  Line: 174
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160891a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160890a.jpg	
+  Line: 165
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160890a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160830b.jpg	
+ Lines: 196, 197
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160830b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160896.jpg	
+  Line: 180
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160896.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160890b.jpg	
+  Line: 166
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160890b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160891.jpg	
+  Line: 173
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160891.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160829.jpg	
+  Line: 187
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160829.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160891b.jpg	
+  Line: 175
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160891b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160890.jpg	
+  Line: 164
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160890.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1608.jpg	
+  Line: 150
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1608.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1602.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+148: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+149: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+152: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+162: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+163: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+164: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+171: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+172: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+173: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+178: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+179: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+180: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+185: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+186: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+187: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+192: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+193: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+194: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+195: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+200: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+201: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+202: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+205: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+206: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+207: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/160290.jpg	
+  Line: 162
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160290.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160290b.jpg	
+  Line: 164
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160290b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160296a.jpg	
+  Line: 179
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160296a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160296b.jpg	
+  Line: 180
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160296b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/160230b.jpg	
+ Lines: 194, 195
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160230b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160245.jpg	
+  Line: 200
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160245.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160229b.jpg	
+  Line: 187
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160229b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1602.jpg	
+  Line: 148
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1602.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160230a.jpg	
+  Line: 193
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160230a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160245a.jpg	
+  Line: 201
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160245a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160229a.jpg	
+  Line: 186
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160229a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160230.jpg	
+  Line: 192
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160230.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160290a.jpg	
+  Line: 163
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160290a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160291.jpg	
+  Line: 171
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160291.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160296.jpg	
+  Line: 178
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160296.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160291b.jpg	
+  Line: 173
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160291b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160291a.jpg	
+  Line: 172
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160291a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1602harv.jpg	
+  Line: 205
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1602harv.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/160245b.jpg	
+  Line: 202
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/160245b.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/EmilyDickinson16/1610.html
+HTML VALIDATION: 
+Errors
+----------------------
+1: Saw <?. Probable cause: Attempt to use an XML processing instruction in HTML. (XML processing instructions are not supported in HTML.)
+109: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+110: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+113: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+123: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+124: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+125: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+132: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+133: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+134: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+139: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+140: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+141: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+146: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+147: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+148: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+153: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+154: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+155: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+156: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+161: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+162: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+163: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+166: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+167: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+168: An img element must have an alt attribute, except under certain conditions. For details, consult guidance on providing text alternatives for images.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+1, 38: Comments seen before doctype. Internet Explorer will go into the quirks mode.
+LINK CHECKING: 
+List of broken links:
+----------------------
+/var/www/html/pacific/EmilyDickinson16/161030b.jpg	
+ Lines: 155, 156
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161030b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161091.jpg	
+  Line: 132
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161091.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161096a.jpg	
+  Line: 140
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161096a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1610harvb.jpg	
+  Line: 168
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1610harvb.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1610a.jpg	
+  Line: 110
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1610a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161045b.jpg	
+  Line: 163
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161045b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161030a.jpg	
+  Line: 154
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161030a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161029b.jpg	
+  Line: 148
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161029b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/about.html	
+  Line: 15
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/about.html' does not exist
+/var/www/html/pacific/EmilyDickinson16/161029.jpg	
+  Line: 146
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161029.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161045.jpg	
+  Line: 161
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161045.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/1610harva.jpg	
+  Line: 167
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/1610harva.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161096b.jpg	
+  Line: 141
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161096b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161091a.jpg	
+  Line: 133
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161091a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161090b.jpg	
+  Line: 125
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161090b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161096.jpg	
+  Line: 139
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161096.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161029a.jpg	
+  Line: 147
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161029a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161091b.jpg	
+  Line: 134
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161091b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/fs1610b.jpg	
+  Line: 113
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/fs1610b.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161090a.jpg	
+  Line: 124
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161090a.jpg' does not exist
+/var/www/html/pacific/EmilyDickinson16/161045a.jpg	
+  Line: 162
+  Code: 404 File `/var/www/html/pacific/EmilyDickinson16/161045a.jpg' does not exist
+
+List of redirects:
+----------------------
+http://i.creativecommons.org/l/by-nc-sa/3.0/80x15.png
+-> https://licensebuttons.net/l/by-nc-sa/3.0/80x15.png	
+  Line: 16
+  Code: 301 -> 200 OK
+
+FILE: /var/www/html/pacific/MappingGroup/CookGeorgVoyageComp.html
+HTML VALIDATION: 
+Errors
+----------------------
+29: The center element is obsolete. Use CSS instead.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+25, 16: Empty heading.
+LINK CHECKING: 
+List of broken links:
+----------------------
+file://www.gmodules.com/ig/ifr?url=http://dl.google.com/developers/maps/embedkmlgadget.xml&up_kml_url=http%3A%2F%2Fpacific.obdurodon.org%2FCookGForster.kml&up_view_mode=earth&up_earth_2d_fallback=0&up_earth_fly_from_space=1&up_earth_show_nav_controls=1&up_earth_show_buildings=1&up_earth_show_terrain=1&up_earth_show_roads=1&up_earth_show_borders=1&up_earth_sphere=earth&up_maps_zoom_out=0&up_maps_default_type=map&synd=open&w=500&h=400&title=Embedded+KML+Viewer&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js	
+  Line: 29
+  Code: 404 File `//www.gmodules.com/ig/ifr' does not exist
+
+FILE: /var/www/html/pacific/MappingGroup/about.html
+HTML VALIDATION: 
+No errors.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/MappingGroup/maps2.html
+HTML VALIDATION: 
+Errors
+----------------------
+9: Element title not allowed as child of element head in this context. (Suppressing further errors from this subtree.)
+17: & did not start a character reference. (& probably should have been escaped as &amp;.)
+74: Bad value file:///C|/Users/Kitsune Hazard/Desktop/banner7.jpg for attribute src on element img: Illegal character in path segment: not a URL code point.
+94: Bad value file:///C|/Users/Kitsune Hazard/Desktop/HwksWallisMap.html for attribute href on element a: Illegal character in path segment: not a URL code point.
+101: Bad value file:///C|/Users/Kitsune Hazard/Desktop/CookVoy2Map.html for attribute href on element a: Illegal character in path segment: not a URL code point.
+113: Stray end tag script.
+114: Stray end tag div.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: 
+List of broken links:
+----------------------
+/C%7C/Users/Kitsune%20Hazard/Desktop/banner7.jpg	
+  Line: 74
+  Code: 404 File `/C|/Users/Kitsune Hazard/Desktop/banner7.jpg' does not exist
+/C%7C/Users/Kitsune%20Hazard/Desktop/HwksWallisMap.html	
+  Line: 94
+  Code: 404 File `/C|/Users/Kitsune Hazard/Desktop/HwksWallisMap.html' does not exist
+/C%7C/Users/Kitsune%20Hazard/Desktop/CookVoy2Map.html	
+  Line: 101
+  Code: 404 File `/C|/Users/Kitsune Hazard/Desktop/CookVoy2Map.html' does not exist
+
+FILE: /var/www/html/pacific/MappingGroup/GeorgFVoyage.html
+HTML VALIDATION: 
+Errors
+----------------------
+29: The center element is obsolete. Use CSS instead.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+LINK CHECKING: 
+List of broken links:
+----------------------
+file://www.gmodules.com/ig/ifr?url=http://dl.google.com/developers/maps/embedkmlgadget.xml&up_kml_url=http%3A%2F%2Fpitt.edu%2F~bmc74%2FGForster3.kml&up_view_mode=earth&up_earth_2d_fallback=0&up_earth_fly_from_space=1&up_earth_show_nav_controls=1&up_earth_show_buildings=1&up_earth_show_terrain=1&up_earth_show_roads=1&up_earth_show_borders=1&up_earth_sphere=earth&up_maps_zoom_out=0&up_maps_default_type=map&synd=open&w=500&h=400&title=Embedded+KML+Viewer&border=%23ffffff%7C3px%2C1px+solid+%23999999&output=js	
+  Line: 29
+  Code: 404 File `//www.gmodules.com/ig/ifr' does not exist
+
+FILE: /var/www/html/pacific/MappingGroup/maps.html
+HTML VALIDATION: 
+Errors
+----------------------
+9: Element title not allowed as child of element head in this context. (Suppressing further errors from this subtree.)
+17: & did not start a character reference. (& probably should have been escaped as &amp;.)
+111: Stray end tag script.
+112: Stray end tag div.
+
+Warnings
+----------------------
+DOCTYPE Override in effect!
+No Character encoding declared at document level
+LINK CHECKING: Valid links. 
+
+FILE: /var/www/html/pacific/Graphsidebar.css
+CSS VALIDATION: 
+Errors
+----------------------
+28: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+38: div#navigation
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/Cookvoy1graph.css
+CSS VALIDATION: 
+Errors
+----------------------
+48: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/EccoBib.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/samplepage.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/sidebar.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/central.css
+CSS VALIDATION: 
+Errors
+----------------------
+27: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/histoverlay.css
+CSS VALIDATION: 
+Errors
+----------------------
+28: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+36: div#mainPage
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/injured.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/forstersidebar.css
+CSS VALIDATION: 
+Errors
+----------------------
+72: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/hawkesworth.css
+CSS VALIDATION: 
+Errors
+----------------------
+64: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/PoemsSBnc.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/pacificproject.css
+CSS VALIDATION: 
+Errors
+----------------------
+38: div#navigation
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/CookElegysidebar.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/forster.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/pacific.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/CookElegySBnc.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/ECCOGroup/EccoBib.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/OmaiGroup/cssGroupTwo.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/OmaiGroup/OmaiTripRoundWorld.css
+CSS VALIDATION: No errors. No warnings.
+
+FILE: /var/www/html/pacific/CookVoy1Group/TableCSS.css
+CSS VALIDATION: 
+Errors
+----------------------
+14: body
+Value Error : padding (nullbox.html#propdef-padding) Too many values or values are not recognized :
+
+No warnings.
+
+FILE: /var/www/html/pacific/CookVoy1Group/CookVoy1CSS.css
+CSS VALIDATION: 
+Errors
+----------------------
+14: body
+Value Error : padding (nullbox.html#propdef-padding) Too many values or values are not recognized :
+
+No warnings.
+
+FILE: /var/www/html/pacific/EmilyDickinson16/Dickinson.css
+CSS VALIDATION: 
+Errors
+----------------------
+27: div.container
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+37: div.published
+Value Error : float (nullvisuren.html#propdef-float) bottom is not a float value :
+
+No warnings.
+
+FILE: /var/www/html/pacific/MappingGroup/final.css
+CSS VALIDATION: 
+Errors
+----------------------
+25: div#banner
+Value Error : float (nullvisuren.html#propdef-float) top is not a float value :
+95: div#mapCanvas
+Value Error : width (nullvisudet.html#propdef-width) attempt to find a semi-colon before the property name. add it
+
+No warnings.

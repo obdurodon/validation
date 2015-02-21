@@ -166,11 +166,10 @@ def validate_html(file):
                 warning_output = '\nWarnings\n----------------------\n' + warning_output
                 formatted_output = formatted_output + warning_output
         else:
-            formatted_output = formatted_output + 'Must have an HTML 5 doctype to validate or use legacy option.\n'
-        
+            formatted_output = output
     else:
-        formatted_output = output
-        
+        formatted_output = formatted_output + 'Must have an HTML 5 doctype to validate or use legacy option.\n'
+       
     print formatted_output
     
     file_output = file_output + formatted_output
@@ -255,7 +254,7 @@ def validate_css(file):
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     global file_output
-    domains = ['gutenberg', 'mailto']
+    domains = ['gutenberg']
     output = ''
     formatted_output = ''
     error_output = ''
@@ -428,13 +427,14 @@ dir_name = dir_path[-1]
 # get file paths for directory
 paths = get_filepaths(directory)
 
+divider = '*' * 80
 # loop over files for html/link validation
 for path in paths:
     if (path.endswith('.html') or path.endswith('.xhtml')):
         if '/include/' not in path and '/inc/' not in path:
-            print '*' * 80
+            print divider
             print 'FILE: ' + path + '\n'
-            file_output = file_output + '\nFILE: ' + path + '\n'
+            file_output = file_output + divider + '\nFILE: ' + path + '\n'
             if not options.skiphtml:
                 validate_html(path)
             if not options.skiplinks:
@@ -444,9 +444,9 @@ for path in paths:
 if not options.skipcss:
     for path in paths:
         if path.endswith('.css'):
-            print '*' * 80
+            print divider
             print 'FILE: ' + path + '\n'
-            file_output = file_output + '\nFILE: ' + path + '\n'
+            file_output = file_output + divider + '\nFILE: ' + path + '\n'
             validate_css(path)
             
 if options.save_output:
