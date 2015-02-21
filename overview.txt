@@ -1,23 +1,16 @@
 ﻿TODO
-- fix url handling for subdirectories for css and html files
-- check links
-    don't need to do
-    include redirects
 - documentation on usage
 - php support....eventually (option to ignore php)
 - error files before clean files
 - check portability
 - check file naming and extensions (report html ext as bad)
 
-OPTIONS
-done
+OPTIONS (all completed)
 - make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
 - save output to file (-s)
 - switch for legacy code
 - use specified directory
 - project vs public directory
-to do
-- css profile type choice?
 - debug mode with all output
 - turn off html validation
 - turn off css validation
@@ -26,31 +19,3 @@ HELPFUL COMMANDS
 
 directory for executable:
 /usr/local/bin
-
-LINK OUTPUT
-
-List of broken links and other issues:
-
-http://www.gutenberg.org/ebooks/15777
-  Line: 35
-  Code: 403 Forbidden
- To do: The link is forbidden! This needs fixing. Usual suspects: a missing
-        index.html or Overview.html, or a missing ACL.
-
-http://www.gutenberg.org/ebooks/15869
-  Line: 36
-  Code: 403 Forbidden
- To do: The link is forbidden! This needs fixing. Usual suspects: a missing
-        index.html or Overview.html, or a missing ACL.
-
-http://babel.hathitrust.org/cgi/pt?id=uc1.31822022888960;page=root;seq=623;view=plaintext;size=100;orient=0;num=594
-  Line: 26
-  Code: (N/A) Forbidden by robots.txt
- To do: The link was not checked due to robots exclusion rules. Check the
-        link manually.
-
-http://babel.hathitrust.org/cgi/pt?id=uc1.31822022888960;seq=20;view=1up;num=i
-  Line: 26
-  Code: (N/A) Forbidden by robots.txt
- To do: The link was not checked due to robots exclusion rules. Check the
-        link manually.
