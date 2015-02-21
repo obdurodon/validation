@@ -254,7 +254,8 @@ def validate_css(file):
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     global file_output
-    domains = ['gutenberg']
+    man_domains = ['gutenberg']
+    exclude_domains = ['mailto']
     output = ''
     formatted_output = ''
     error_output = ''
@@ -277,8 +278,14 @@ def check_links(file):
                 while ((count < len(lines)) and ('redirect' not in lines[count]) and ('Anchors' not in lines[count])):
                     # boolean to check link not in forbidden domains
                     forbidden = False
+                    exclude = False
                     
                     link = lines[count]
+                    
+                    if '->' in lines[count+1]:
+                        link = link + '\n' + lines[count+1]
+                        count = count + 1
+                        
                     if 'file:///' in link:
                         link = link[7:]
                         
@@ -296,25 +303,37 @@ def check_links(file):
                     
                     count = td_count
                     
-                    for domain in domains:
+                    for domain in man_domains:
                         if domain in link:
                             forbidden = True
                             break
-                    
-                    if not forbidden:
-                        if 'robots.txt' in code:
-                            url = urllib2.urlopen(link)
-                            url_code = url.getcode()
-                            
-                            if url_code != 200:
-                                error_output = error_output + link + '\n' + line_info + '\n'
-                                error_output = error_output + '  Code:' + url_code + '\n'
+                    for domain in exclude_domains:
+                        if domain in link:
+                            exclude = True
+                            break
+                    if not exclude:
+                        if not forbidden:
+                            if 'robots.txt' in code:
+                                url = ''
+                                if '->' in link:
+                                    new_line_ind = link.find('\n')
+                                    url = link[:new_line_ind]
+                                else:
+                                    url = link
+                                # need to handle errors
+                                # http://stackoverflow.com/questions/8262275/urllib2-try-and-except-on-404
+                                open_link = urllib2.urlopen(url)
+                                url_code = open_link.getcode()
                                 
+                                if url_code != 200:
+                                    error_output = error_output + link + '\n' + line_info + '\n'
+                                    error_output = error_output + '  Code:' + url_code + '\n'
+                                    
+                            else:
+                                error_output = error_output + link + '\n' + line_info + '\n' + code + '\n'
                         else:
-                            error_output = error_output + link + '\n' + line_info + '\n' + code + '\n'
-                    else:
-                        error_output = error_output + link + '\n' + line_info + '\n'
-                        error_output = error_output + ' To do: Must check manually. Site forbids validator.\n'
+                            error_output = error_output + link + '\n' + line_info + '\n'
+                            error_output = error_output + ' To do: Must check manually. Site forbids validator.\n'
                     
                     count = count + 1
                     
