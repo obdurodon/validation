@@ -317,17 +317,18 @@ def check_links(file):
                                 url = ''
                                 if '->' in link:
                                     new_line_ind = link.find('\n')
-                                    url = link[:new_line_ind]
+                                    new_line_ind = new_line_ind + 4
+                                    url = link[new_line_ind:]
                                 else:
                                     url = link
-                                # need to handle errors
-                                # http://stackoverflow.com/questions/8262275/urllib2-try-and-except-on-404
-                                open_link = urllib2.urlopen(url)
-                                url_code = open_link.getcode()
-                                
+                                try:
+                                    open_link = urllib2.urlopen(url)
+                                    url_code = open_link.getcode()
+                                except urllib2.HTTPError, e:
+                                    url_code = e.code
                                 if url_code != 200:
                                     error_output = error_output + link + '\n' + line_info + '\n'
-                                    error_output = error_output + '  Code:' + url_code + '\n'
+                                    error_output = error_output + '  Code: ' + str(url_code) + '\n'
                                     
                             else:
                                 error_output = error_output + link + '\n' + line_info + '\n' + code + '\n'
