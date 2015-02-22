@@ -449,16 +449,17 @@ paths = get_filepaths(directory)
 
 divider = '*' * 80
 # loop over files for html/link validation
-for path in paths:
-    if (path.endswith('.html') or path.endswith('.xhtml')):
-        if '/include/' not in path and '/inc/' not in path:
-            print divider
-            print 'FILE: ' + path + '\n'
-            file_output = file_output + divider + '\nFILE: ' + path + '\n'
-            if not options.skiphtml:
-                validate_html(path)
-            if not options.skiplinks:
-                check_links(path)
+if (not options.skiphtml) or (not options.skiplinks):
+    for path in paths:
+        if (path.endswith('.html') or path.endswith('.xhtml')):
+            if '/include/' not in path and '/inc/' not in path:
+                print divider
+                print 'FILE: ' + path + '\n'
+                file_output = file_output + divider + '\nFILE: ' + path + '\n'
+                if not options.skiphtml:
+                    validate_html(path)
+                if not options.skiplinks:
+                    check_links(path)
                 
 # loop over files for css validation
 if not options.skipcss:
