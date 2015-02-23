@@ -1,5 +1,4 @@
 ﻿TODO
-- documentation on usage
 - php support....eventually (option to ignore php)
 - error files before clean files
 - check portability
