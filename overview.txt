@@ -3,6 +3,7 @@
 - error files before clean files
 - check portability
 - check file naming and extensions (report html ext as bad)
+- exclude creative commons license in link checking
 
 OPTIONS (all completed)
 - make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
