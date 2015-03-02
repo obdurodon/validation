@@ -255,7 +255,7 @@ def validate_css(file):
 def check_links(file):
     global file_output
     man_domains = ['gutenberg']
-    exclude_domains = ['mailto']
+    exclude_domains = ['mailto', 'about:legacy-compat']
     output = ''
     formatted_output = ''
     error_output = ''
