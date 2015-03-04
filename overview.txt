@@ -1,5 +1,5 @@
 ﻿TODO
-- php support....eventually (option to ignore php)
+----- version 1 -------
 - trap connection time out errors and report server busy, try again soon
 - error files before clean files
     report html files as processed if invalid or broken links
@@ -16,6 +16,10 @@
 - rename man_domains to include host
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
+----- version 2 -------
+- php support....eventually (option to ignore php) ----- 
+    check mime type in headers (needs to be application/xhtml+xml, legacy is text/html)
+    use mime type for normal xhtml/html as well
 
 OPTIONS (all completed)
 - make checking links an option to save time checking static pages? (put on hold while dealing with robots issue)
