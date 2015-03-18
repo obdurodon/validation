@@ -68,6 +68,30 @@ def get_filepaths(dir):
             file_paths.append(filepath)  # Add it to the list.
 
     return file_paths
+
+# check if string contains any forbidden characters
+def check_filename(path):
+    file_path = path.split('/')
+    filename = file_path[-1]
+    # true if filename contains forbidden char or bad extension
+    forbidden = False
+    # list of forbidden characters
+    forbidden_chars = [' ', '!', ',', '?']
+    
+    # check filename extension
+    if not options.legacy:
+        # check that if html file and not legacy, extension is .xhtml
+        if 'css' not in filename and 'xhtml' not in filename:
+            forbidden = True
+    # if extension is correct, check for forbidden characters
+    if not forbidden:
+        # loop through list of forbidden characters
+        for char in forbidden_chars:
+            # if filename contains character, set boolean to true
+            if char in filename:
+                forbidden = True
+    # return boolean            
+    return forbidden
     
 # method taken from answer to StackOverflow question
 # http://stackoverflow.com/questions/2499358/get-document-doctype-with-beautifulsoup
@@ -254,8 +278,8 @@ def validate_css(file):
 # need to filter out mailto links and settings displayed on each command
 def check_links(file):
     global file_output
-    man_domains = ['gutenberg']
-    exclude_domains = ['mailto', 'about:legacy-compat']
+    hosts_to_check = ['gutenberg']
+    excluded_schemes = ['mailto:', 'about:legacy-compat', 'creativecommons']
     output = ''
     formatted_output = ''
     error_output = ''
@@ -303,11 +327,11 @@ def check_links(file):
                     
                     count = td_count
                     
-                    for domain in man_domains:
+                    for domain in hosts_to_check:
                         if domain in link:
                             forbidden = True
                             break
-                    for domain in exclude_domains:
+                    for domain in excluded_schemes:
                         if domain in link:
                             exclude = True
                             break
@@ -345,6 +369,10 @@ def check_links(file):
                     count = count + 2
                     
                 while ((count < len(lines)) and ('Anchors' not in lines[count])):
+                    # boolean to check link not in forbidden domains
+                    forbidden = False
+                    exclude = False
+                    
                     link = lines[count]
                     if '->' in lines[count+1]:
                         link = link + '\n' + lines[count+1]
@@ -361,9 +389,42 @@ def check_links(file):
                         #to_do = to_do + line
                     #to_do = re.sub( '\s+', ' ', to_do).strip()
                     
-                    redirect_output = redirect_output + link + '\n' + line_info + '\n' + code + '\n'
+                    count = td_count
                     
-                    count = td_count + 1
+                    for domain in hosts_to_check:
+                        if domain in link:
+                            forbidden = True
+                            break
+                    for domain in excluded_schemes:
+                        if domain in link:
+                            exclude = True
+                            break
+                    if not exclude:
+                        if not forbidden:
+                            if 'robots.txt' in code:
+                                url = ''
+                                if '->' in link:
+                                    new_line_ind = link.find('\n')
+                                    new_line_ind = new_line_ind + 4
+                                    url = link[new_line_ind:]
+                                else:
+                                    url = link
+                                try:
+                                    open_link = urllib2.urlopen(url)
+                                    url_code = open_link.getcode()
+                                except urllib2.HTTPError, e:
+                                    url_code = e.code
+                                if url_code != 200:
+                                    redirect_output = redirect_output + link + '\n' + line_info + '\n'
+                                    redirect_output = redirect_output + '  Code: ' + str(url_code) + '\n'
+                                    
+                            else:
+                                redirect_output = redirect_output + link + '\n' + line_info + '\n' + code + '\n'
+                        else:
+                            redirect_output = redirect_output + link + '\n' + line_info + '\n'
+                            redirect_output = redirect_output + ' To do: Must check manually. Site forbids validator.\n'
+                    
+                    count = count + 1
                     
                     if lines[count] == '':
                         count = count + 1                    
@@ -371,6 +432,10 @@ def check_links(file):
                 count = count + 2
                 
                 while ((count < len(lines)) and ('Anchors' not in lines[count])):
+                    # boolean to check link not in forbidden domains
+                    forbidden = False
+                    exclude = False
+                    
                     link = lines[count]
                     if '->' in lines[count+1]:
                         link = link + '\n' + lines[count+1]
@@ -386,9 +451,42 @@ def check_links(file):
                         #to_do = to_do + line
                     #to_do = re.sub( '\s+', ' ', to_do).strip()
                     
-                    redirect_output = redirect_output + link + '\n' + line_info + '\n' + code + '\n'
+                    count = td_count
                     
-                    count = td_count + 1
+                    for domain in hosts_to_check:
+                        if domain in link:
+                            forbidden = True
+                            break
+                    for domain in excluded_schemes:
+                        if domain in link:
+                            exclude = True
+                            break
+                    if not exclude:
+                        if not forbidden:
+                            if 'robots.txt' in code:
+                                url = ''
+                                if '->' in link:
+                                    new_line_ind = link.find('\n')
+                                    new_line_ind = new_line_ind + 4
+                                    url = link[new_line_ind:]
+                                else:
+                                    url = link
+                                try:
+                                    open_link = urllib2.urlopen(url)
+                                    url_code = open_link.getcode()
+                                except urllib2.HTTPError, e:
+                                    url_code = e.code
+                                if url_code != 200:
+                                    redirect_output = redirect_output + link + '\n' + line_info + '\n'
+                                    redirect_output = redirect_output + '  Code: ' + str(url_code) + '\n'
+                                    
+                            else:
+                                redirect_output = redirect_output + link + '\n' + line_info + '\n' + code + '\n'
+                        else:
+                            redirect_output = redirect_output + link + '\n' + line_info + '\n'
+                            redirect_output = redirect_output + ' To do: Must check manually. Site forbids validator.\n'
+                    
+                    count = count + 1
                     
                     if lines[count] == '':
                         count = count + 1
@@ -454,12 +552,16 @@ if (not options.skiphtml) or (not options.skiplinks):
         if (path.endswith('.html') or path.endswith('.xhtml')):
             if '/include/' not in path and '/inc/' not in path:
                 print divider
-                print 'FILE: ' + path + '\n'
+                print 'FILE: ' + path + '\n'                
                 file_output = file_output + divider + '\nFILE: ' + path + '\n'
-                if not options.skiphtml:
-                    validate_html(path)
-                if not options.skiplinks:
-                    check_links(path)
+                if check_filename(path):
+                    print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                    file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                else:
+                    if not options.skiphtml:
+                        validate_html(path)
+                    if not options.skiplinks:
+                        check_links(path)
                 
 # loop over files for css validation
 if not options.skipcss:
@@ -468,7 +570,11 @@ if not options.skipcss:
             print divider
             print 'FILE: ' + path + '\n'
             file_output = file_output + divider + '\nFILE: ' + path + '\n'
-            validate_css(path)
+            if check_filename(path):
+                print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+            else:
+                validate_css(path)
             
 if options.save_output:
     # create file name

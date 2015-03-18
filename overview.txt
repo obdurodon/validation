@@ -6,14 +6,6 @@
     then list summary of files with valid html and links (just filenames)
     do same for css
 - for link checking, check for 404s for absolute file paths and check manually
-- check portability
-- check file naming and extensions (report html ext as bad)
-    no spaces, no punctuation other than -,_,.
-    must be .xhtml (legacy exception)
-    for .html report filename error and don't validate
-- exclude creative commons license in link checking
-- rename excluded domains to scheme name and include colon
-- rename man_domains to include host
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
 ----- version 2 -------
@@ -30,8 +22,6 @@ OPTIONS (all completed)
 - debug mode with all output
 - turn off html validation
 - turn off css validation
-
-HELPFUL COMMANDS
 
 directory for executable:
 /usr/local/bin
