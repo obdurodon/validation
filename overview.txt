@@ -8,7 +8,9 @@
 - for link checking, check for 404s for absolute file paths and check manually
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
+- look into manipulating calculations for include file line adjustments
 - look into link checking of valid link for seuss project
+- multiprocessing?
 ----- version 2 -------
 - php support....eventually (option to ignore php) ----- 
     check mime type in headers (needs to be application/xhtml+xml, legacy is text/html)
