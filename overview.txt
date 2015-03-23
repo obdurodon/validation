@@ -1,6 +1,5 @@
 ﻿TODO
 ----- version 1 -------
-- trap connection time out errors and report server busy, try again soon
 - error files before clean files
     report html files as processed if invalid or broken links
     then list summary of files with valid html and links (just filenames)
@@ -9,7 +8,6 @@
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
 - look into manipulating calculations for include file line adjustments
-- look into link checking of valid link for seuss project
 - multiprocessing?
 ----- version 2 -------
 - php support....eventually (option to ignore php) ----- 

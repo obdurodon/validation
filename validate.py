@@ -20,6 +20,7 @@ dir_name = ''
 paths = []
 file_output = ''
 save_output = None
+timeout_length = 120
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -109,6 +110,7 @@ def run_command(command):
 # validate html files
 def validate_html(file):
     global file_output
+    global timeout_length
     html_5 = 'html'
     html_5_legacy = 'html SYSTEM "about:legacy-compat"'
     formatted_output = 'HTML VALIDATION: '
@@ -134,7 +136,12 @@ def validate_html(file):
         url_values = urllib.urlencode(data)
         
         url = base_url + '?' + url_values
-        response = urllib2.urlopen(url)
+        
+        try:
+            response = urllib2.urlopen(url, timeout = timeout_length)
+        except urllib2.URLError:  
+            print 'Connection timed out. Please try again in a few minutes.\n'
+            return 0
         
         output = response.read()
         
@@ -204,6 +211,7 @@ def validate_css(file):
     # make GET call to http://jigsaw.w3.org/css-validator/validator?uri= ENCODED URL &warning=0&profile=css3
     # process SOAP response
     global file_output
+    global timeout_length
     formatted_output = 'CSS VALIDATION: '
     output = ''
     base_url = 'http://jigsaw.w3.org/css-validator/validator'
@@ -217,7 +225,12 @@ def validate_css(file):
     url_values = urllib.urlencode(data)
     
     url = base_url + '?' + url_values
-    response = urllib2.urlopen(url)
+    
+    try:
+        response = urllib2.urlopen(url, timeout = timeout_length)
+    except urllib2.URLError:  
+        print 'Connection timed out. Please try again in a few minutes.'
+        return 0
     
     output = response.read()
     
