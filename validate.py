@@ -21,6 +21,7 @@ paths = []
 file_output = ''
 save_output = None
 timeout_length = 120
+valid_files = ''
 
 # ****************************** AUXILLARY METHODS ***********************
 
@@ -77,7 +78,7 @@ def check_filename(path):
     # true if filename contains forbidden char or bad extension
     forbidden = False
     # list of forbidden characters
-    forbidden_chars = [' ', '!', ',', '?']
+    forbidden_chars = [' ', '!', ',', '?', ':']
     
     # check filename extension
     if not options.legacy:
@@ -113,7 +114,7 @@ def validate_html(file):
     global timeout_length
     html_5 = 'html'
     html_5_legacy = 'html SYSTEM "about:legacy-compat"'
-    formatted_output = 'HTML VALIDATION: '
+    formatted_output = ''
     
     # use BeautifulSoup to check doctype before validating
     html = open(file).read()
@@ -140,9 +141,8 @@ def validate_html(file):
         try:
             response = urllib2.urlopen(url, timeout = timeout_length)
         except urllib2.URLError:  
-            print 'Connection timed out. Please try again in a few minutes.\n'
-            return 0
-        
+            return 'Connection timed out. Please try again in a few minutes.\n'
+           
         output = response.read()
         
         if not options.debug:
@@ -182,28 +182,28 @@ def validate_html(file):
                     warning_output = warning_output + '\n'
             
             if not error_output and not warning_output:
-                formatted_output = formatted_output + 'No errors. No warnings.\n'
-            elif not error_output:
-                formatted_output = formatted_output + '\nNo errors.\n'
-                warning_output = '\nWarnings\n----------------------\n' + warning_output
-                formatted_output = formatted_output + warning_output
-            elif not warning_output:
-                error_output = '\nErrors\n----------------------\n' + error_output
-                formatted_output = formatted_output + error_output
-                formatted_output = formatted_output + '\nNo warnings.\n'            
+                formatted_output = ''
             else:
-                error_output = '\nErrors\n----------------------\n' + error_output
-                formatted_output = formatted_output + error_output
-                warning_output = '\nWarnings\n----------------------\n' + warning_output
-                formatted_output = formatted_output + warning_output
+                formatted_output = 'HTML VALIDATION:'
+                if not error_output:
+                    formatted_output = formatted_output + '\nNo errors.\n'
+                    warning_output = '\nWarnings\n----------------------\n' + warning_output
+                    formatted_output = formatted_output + warning_output
+                elif not warning_output:
+                    error_output = '\nErrors\n----------------------\n' + error_output
+                    formatted_output = formatted_output + error_output
+                    formatted_output = formatted_output + '\nNo warnings.\n'            
+                else:
+                    error_output = '\nErrors\n----------------------\n' + error_output
+                    formatted_output = formatted_output + error_output
+                    warning_output = '\nWarnings\n----------------------\n' + warning_output
+                    formatted_output = formatted_output + warning_output
         else:
             formatted_output = output
     else:
-        formatted_output = formatted_output + 'Must have an HTML 5 doctype to validate or use legacy option.\n'
+        formatted_output = 'HTML VALIDATION: Must have an HTML 5 doctype to validate or use legacy option.\n'
        
-    print formatted_output
-    
-    file_output = file_output + formatted_output
+    return formatted_output
 
 # validate css files
 def validate_css(file):
@@ -212,7 +212,7 @@ def validate_css(file):
     # process SOAP response
     global file_output
     global timeout_length
-    formatted_output = 'CSS VALIDATION: '
+    formatted_output = ''
     output = ''
     base_url = 'http://jigsaw.w3.org/css-validator/validator'
     file_url = get_url(file)
@@ -229,9 +229,8 @@ def validate_css(file):
     try:
         response = urllib2.urlopen(url, timeout = timeout_length)
     except urllib2.URLError:  
-        print 'Connection timed out. Please try again in a few minutes.'
-        return 0
-    
+        return 'Connection timed out. Please try again in a few minutes.'
+        
     output = response.read()
     
     if not options.debug:
@@ -265,7 +264,7 @@ def validate_css(file):
                 warning_output = warning_output + '\n'
             
         if not error_output and not warning_output:
-            formatted_output = formatted_output + 'No errors. No warnings.\n'
+            formatted_output = ''
         elif not error_output:
             formatted_output = formatted_output + '\nNo errors.\n'
             warning_output = '\nWarnings\n----------------------\n' + warning_output
@@ -283,9 +282,7 @@ def validate_css(file):
     else :
         formatted_output = output
     
-    print formatted_output
-    
-    file_output = file_output + formatted_output
+    return formatted_output
 
 # validate links for html pages
 # need to filter out mailto links and settings displayed on each command
@@ -323,9 +320,6 @@ def check_links(file):
                         link = link + '\n' + lines[count+1]
                         count = count + 1
                         
-                    if 'file:///' in link:
-                        link = link[7:]
-                        
                     line_info = lines[count+1]
                     code = lines[count+2]
                     
@@ -348,16 +342,23 @@ def check_links(file):
                         if domain in link:
                             exclude = True
                             break
+                    if '200' in code:
+                        exclude = True
+                    
                     if not exclude:
                         if not forbidden:
-                            if 'robots.txt' in code:
+                            if 'robots.txt' in code or 'file:///' in link:
                                 url = ''
                                 if '->' in link:
                                     new_line_ind = link.find('\n')
                                     new_line_ind = new_line_ind + 4
                                     url = link[new_line_ind:]
                                 else:
-                                    url = link
+                                    if 'file:///' in link:
+                                        link = link[7:]
+                                        url = 'http://' + dir_name + '.obdurodon.org' + url
+                                    else:
+                                        url = link
                                 try:
                                     open_link = urllib2.urlopen(url)
                                     url_code = open_link.getcode()
@@ -368,6 +369,8 @@ def check_links(file):
                                     error_output = error_output + '  Code: ' + str(url_code) + '\n'
                                     
                             else:
+                                if 'file:///' in link:
+                                    link = link[7:]
                                 error_output = error_output + link + '\n' + line_info + '\n' + code + '\n'
                         else:
                             error_output = error_output + link + '\n' + line_info + '\n'
@@ -507,23 +510,21 @@ def check_links(file):
                 count = count + 1
         
         if error_output and redirect_output:
-            formatted_output = formatted_output + "LINK CHECKING: \n"
+            formatted_output = formatted_output + 'LINK CHECKING: \n'
             formatted_output = formatted_output + 'List of broken links:\n----------------------\n' + error_output
             formatted_output = formatted_output + '\nList of redirects:\n----------------------\n' + redirect_output
         elif error_output:
-            formatted_output = formatted_output + "LINK CHECKING: \n"
+            formatted_output = formatted_output + 'LINK CHECKING: \n'
             formatted_output = formatted_output + 'List of broken links:\n----------------------\n' + error_output
         elif redirect_output:
-            formatted_output = formatted_output + "LINK CHECKING: \n"
+            formatted_output = formatted_output + 'LINK CHECKING: \n'
             formatted_output = formatted_output + 'List of redirects:\n----------------------\n' + redirect_output
         else:
-            formatted_output = formatted_output + "LINK CHECKING: Valid links. \n"
+            formatted_output = ''
     else:
         formatted_output = output
         
-    print formatted_output
-    
-    file_output = file_output + formatted_output
+    return formatted_output
     
 # ****************************** MAIN LOGIC ******************************    
 
@@ -564,31 +565,75 @@ if (not options.skiphtml) or (not options.skiplinks):
     for path in paths:
         if (path.endswith('.html') or path.endswith('.xhtml')):
             if '/include/' not in path and '/inc/' not in path:
-                print divider
-                print 'FILE: ' + path + '\n'                
-                file_output = file_output + divider + '\nFILE: ' + path + '\n'
                 if check_filename(path):
+                    print divider
+                    print 'FILE: ' + path + '\n'                
+                    file_output = file_output + divider + '\nFILE: ' + path + '\n'
                     print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
                     file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
                 else:
+                    formatted_output = ''
+                    html_output = ''
+                    link_output = ''
                     if not options.skiphtml:
-                        validate_html(path)
+                        html_output = validate_html(path)
                     if not options.skiplinks:
-                        check_links(path)
+                        link_output = check_links(path)
+                    if not html_output and not link_output:
+                        valid_files = valid_files + path + '\n'
+                    else:
+                        print divider
+                        print 'FILE: ' + path + '\n'                
+                        file_output = file_output + divider + '\nFILE: ' + path + '\n'
+                        
+                        if not html_output:
+                            if options.skiphtml:
+                                formatted_output = formatted_output + link_output
+                            else:
+                                formatted_output = 'HTML VALIDATION: No errors. No warnings.\n\n'
+                                formatted_output = formatted_output + link_output                    
+                        elif not link_output:
+                            if options.skiplinks:
+                                formatted_output = formatted_output + html_output
+                            else:
+                                formatted_output = formatted_output + html_output
+                                formatted_output = formatted_output + '\nLINK CHECKING: Valid links.'
+                        else:
+                            formatted_output = formatted_output + html_output
+                            ormatted_output = formatted_output + link_output
+                            
+                        print formatted_output
+                        file_output = file_output + formatted_output                        
                 
 # loop over files for css validation
 if not options.skipcss:
     for path in paths:
         if path.endswith('.css'):
-            print divider
-            print 'FILE: ' + path + '\n'
-            file_output = file_output + divider + '\nFILE: ' + path + '\n'
             if check_filename(path):
+                print divider
+                print 'FILE: ' + path + '\n'
+                file_output = file_output + divider + '\nFILE: ' + path + '\n'
+                
                 print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
                 file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
             else:
-                validate_css(path)
-            
+                css_output = validate_css(path)
+                if css_output:
+                    print divider
+                    print 'FILE: ' + path + '\n'
+                    file_output = file_output + divider + '\nFILE: ' + path + '\n'
+                    
+                    formatted_output = 'CSS VALIDATION:' + css_output
+                    print formatted_output
+                    file_output = file_output + formatted_output
+                else:
+                    valid_files = valid_files + path + '\n' 
+                    
+if valid_files:
+    formatted_output = divider + '\nVALID FILES\n----------------------\n' + valid_files
+    print formatted_output
+    file_output = file_output + formatted_output
+    
 if options.save_output:
     # create file name
     date = datetime.now().strftime("%Y%m%d-%H%M%S")

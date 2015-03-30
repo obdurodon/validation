@@ -1,13 +1,7 @@
 ﻿TODO
 ----- version 1 -------
-- continue testing timeouts 
-- look into broken fragment (suppress for now)
-- error files before clean files
-    report html files as processed if invalid or broken links
-    then list summary of files with valid html and links (just filenames)
-    do same for css
+- strip filename from path in valid files summary?
 - look into manipulating calculations for include file line adjustments
-- for link checking, check for 404s for absolute file paths and check manually
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
 ----- version 2 -------
