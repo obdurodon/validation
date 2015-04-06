@@ -540,107 +540,109 @@ parser.add_option('-l', '--links', action='store_true', dest='skiplinks', defaul
 parser.add_option('-c', '--css', action='store_true', dest='skipcss', default=False, help='skip css validation')
 parser.add_option('-d', '--debug', action='store_true', dest='debug', default=False, help='display unformatted output for debugging purposes')
 (options, args) = parser.parse_args()
+    
+if __name__ == '__main__':
+    # check if path was specified
+    # check for trailing /
+    if options.directory is not None:
+        directory = options.directory
+        if directory[-1] == '/':
+            directory = directory[:-1]
+    else:
+        directory = os.getcwd()
 
-# check if path was specified
-# check for trailing /
-
-if options.directory is not None:
-    directory = options.directory
-    if directory[-1] == '/':
-        directory = directory[:-1]
-else:
-    directory = os.getcwd()
-
-# get just directory name
-dir_path = directory.split('/')
-dir_name = dir_path[-1]
+    # get just directory name
+    dir_path = directory.split('/')
+    dir_name = dir_path[-1]
 
 
-# get file paths for directory
-paths = get_filepaths(directory)
+    # get file paths for directory
+    paths = get_filepaths(directory)
 
-divider = '*' * 80
-# loop over files for html/link validation
-if (not options.skiphtml) or (not options.skiplinks):
-    for path in paths:
-        if (path.endswith('.html') or path.endswith('.xhtml')):
-            if '/include/' not in path and '/inc/' not in path:
-                if check_filename(path):
-                    print divider
-                    print 'FILE: ' + path + '\n'                
-                    file_output = file_output + divider + '\nFILE: ' + path + '\n'
-                    print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
-                    file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
-                else:
-                    formatted_output = ''
-                    html_output = ''
-                    link_output = ''
-                    if not options.skiphtml:
-                        html_output = validate_html(path)
-                    if not options.skiplinks:
-                        link_output = check_links(path)
-                    if not html_output and not link_output:
-                        valid_files = valid_files + path + '\n'
-                    else:
+    divider = '*' * 80
+    
+    print 'Note: The validator will list a summary of valid files at the end of the error report. Do not fret if you do not see immediate output (may take a few minutes).\n'
+    # loop over files for html/link validation
+    if (not options.skiphtml) or (not options.skiplinks):
+        for path in paths:
+            if (path.endswith('.html') or path.endswith('.xhtml')):
+                if '/include/' not in path and '/inc/' not in path:
+                    if check_filename(path):
                         print divider
                         print 'FILE: ' + path + '\n'                
                         file_output = file_output + divider + '\nFILE: ' + path + '\n'
-                        
-                        if not html_output:
-                            if options.skiphtml:
-                                formatted_output = formatted_output + link_output
-                            else:
-                                formatted_output = 'HTML VALIDATION: No errors. No warnings.\n\n'
-                                formatted_output = formatted_output + link_output                    
-                        elif not link_output:
-                            if options.skiplinks:
-                                formatted_output = formatted_output + html_output
-                            else:
-                                formatted_output = formatted_output + html_output
-                                formatted_output = formatted_output + '\nLINK CHECKING: Valid links.'
+                        print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                        file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                    else:
+                        formatted_output = ''
+                        html_output = ''
+                        link_output = ''
+                        if not options.skiphtml:
+                            html_output = validate_html(path)
+                        if not options.skiplinks:
+                            link_output = check_links(path)
+                        if not html_output and not link_output:
+                            valid_files = valid_files + path + '\n'
                         else:
-                            formatted_output = formatted_output + html_output
-                            ormatted_output = formatted_output + link_output
+                            print divider
+                            print 'FILE: ' + path + '\n'                
+                            file_output = file_output + divider + '\nFILE: ' + path + '\n'
                             
-                        print formatted_output
-                        file_output = file_output + formatted_output                        
-                
-# loop over files for css validation
-if not options.skipcss:
-    for path in paths:
-        if path.endswith('.css'):
-            if check_filename(path):
-                print divider
-                print 'FILE: ' + path + '\n'
-                file_output = file_output + divider + '\nFILE: ' + path + '\n'
-                
-                print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
-                file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
-            else:
-                css_output = validate_css(path)
-                if css_output:
+                            if not html_output:
+                                if options.skiphtml:
+                                    formatted_output = formatted_output + link_output
+                                else:
+                                    formatted_output = 'HTML VALIDATION: No errors. No warnings.\n\n'
+                                    formatted_output = formatted_output + link_output                    
+                            elif not link_output:
+                                if options.skiplinks:
+                                    formatted_output = formatted_output + html_output
+                                else:
+                                    formatted_output = formatted_output + html_output
+                                    formatted_output = formatted_output + '\nLINK CHECKING: Valid links.'
+                            else:
+                                formatted_output = formatted_output + html_output
+                                ormatted_output = formatted_output + link_output
+                                
+                            print formatted_output
+                            file_output = file_output + formatted_output                        
+                    
+    # loop over files for css validation
+    if not options.skipcss:
+        for path in paths:
+            if path.endswith('.css'):
+                if check_filename(path):
                     print divider
                     print 'FILE: ' + path + '\n'
                     file_output = file_output + divider + '\nFILE: ' + path + '\n'
                     
-                    formatted_output = 'CSS VALIDATION:' + css_output
-                    print formatted_output
-                    file_output = file_output + formatted_output
+                    print 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
+                    file_output = file_output + 'Filename has bad extension or contains forbidden characters. Cannot validate until remedied.\n'
                 else:
-                    valid_files = valid_files + path + '\n' 
-                    
-if valid_files:
-    formatted_output = divider + '\nVALID FILES\n----------------------\n' + valid_files
-    print formatted_output
-    file_output = file_output + formatted_output
-    
-if options.save_output:
-    # create file name
-    date = datetime.now().strftime("%Y%m%d-%H%M%S")
-    filename = 'validation-' + dir_name+ '-' + date + '.txt'
-    # open file
-    f = open(filename, 'wb')
-    # write output to file
-    f.write(file_output)
-    # close file
-    f.close()
+                    css_output = validate_css(path)
+                    if css_output:
+                        print divider
+                        print 'FILE: ' + path + '\n'
+                        file_output = file_output + divider + '\nFILE: ' + path + '\n'
+                        
+                        formatted_output = 'CSS VALIDATION:' + css_output
+                        print formatted_output
+                        file_output = file_output + formatted_output
+                    else:
+                        valid_files = valid_files + path + '\n' 
+                        
+    if valid_files:
+        formatted_output = divider + '\nVALID FILES\n----------------------\n' + valid_files
+        print formatted_output
+        file_output = file_output + formatted_output
+        
+    if options.save_output:
+        # create file name
+        date = datetime.now().strftime("%Y%m%d-%H%M%S")
+        filename = 'validation-' + dir_name+ '-' + date + '.txt'
+        # open file
+        f = open(filename, 'wb')
+        # write output to file
+        f.write(file_output)
+        # close file
+        f.close()
