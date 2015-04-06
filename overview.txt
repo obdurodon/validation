@@ -3,6 +3,8 @@
 - look into manipulating calculations for include file line adjustments
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
+- multiproccessing
+    multiproccessing queue vs multiproccessing.Manager.Queue()
 ----- version 2 -------
 - php support....eventually (option to ignore php) ----- 
     check mime type in headers (needs to be application/xhtml+xml, legacy is text/html)

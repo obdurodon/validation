@@ -94,7 +94,8 @@ if __name__ == '__main__':
     
     paths = get_filepaths(directory)
     
-    print 'Starting multiprocessing at ' + str(time.clock())
+    start_time = time.time()
+    print 'Starting multiprocessing...'
     
     for path in paths:
         if (path.endswith('.html') or path.endswith('.xhtml')):
@@ -102,16 +103,22 @@ if __name__ == '__main__':
                 p = multiprocessing.Process(target=check_links, args=(path,))
                 jobs.append(p)
                 p.start()
-                p.join()
+    for j in jobs:
+        j.join()
     
-    print 'Ending multiprocessing at ' + str(time.clock())
+    end_time = time.time()
+    duration = end_time - start_time
+    print 'Ending multiprocessing at ' + str(duration)
     
-    print 'Starting regular processing at ' + str(time.clock())
+    start_time = time.time()
+    print 'Starting regular processing...'
     
     for path in paths:
         if (path.endswith('.html') or path.endswith('.xhtml')):
             if '/include/' not in path and '/inc/' not in path:
                 check_links(path)
     
-    print 'Ending regular processing at ' + str(time.clock())
+    end_time = time.time()
+    duration = end_time - start_time
+    print 'Ending regular processing at ' + str(duration)
         
