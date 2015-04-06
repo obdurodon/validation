@@ -1,8 +1,5 @@
 ﻿TODO
 ----- version 1 -------
-- add note about lack of output while running
-- multiprocessing -- test out with sample, don't worry about queue
-    do 10 times in parallel and 10 times serialized to check for caching
 - look into manipulating calculations for include file line adjustments
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
