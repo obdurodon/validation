@@ -1,11 +1,15 @@
 ﻿TODO
 ----- version 1 -------
+- fix doctype checking (line break)
+- change url building to project.obdurodon.org and add option for exceptions
 - look into manipulating calculations for include file line adjustments
 - clean up and add comments
 - add to documentation about how includes are processed in validation (line number issues)
+----- version 2 -------
 - multiproccessing
     multiproccessing queue vs multiproccessing.Manager.Queue()
------ version 2 -------
+    look at pool and map
+- update to python 3.3?
 - php support....eventually (option to ignore php) ----- 
     check mime type in headers (needs to be application/xhtml+xml, legacy is text/html)
     use mime type for normal xhtml/html as well
